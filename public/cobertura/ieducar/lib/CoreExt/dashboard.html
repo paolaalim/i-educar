@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/paola/Área de trabalho/i-educar/ieducar/lib/CoreExt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../_css/bootstrap.min.css?v=12.4.0" rel="stylesheet" type="text/css">
+  <link href="../../../_css/billboard.min.css?v=12.4.0" rel="stylesheet" type="text/css">
+  <link href="../../../_css/style.css?v=12.4.0" rel="stylesheet" type="text/css">
+  <link href="../../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../../index.html">/home/paola/Área de trabalho/i-educar</a></li>
+         <li class="breadcrumb-item"><a href="../../index.html">ieducar</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">lib</a></li>
+         <li class="breadcrumb-item"><a href="index.html">CoreExt</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classesCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Config.class.php.html#3">CoreExt_Config</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config/Ini.class.php.html#3">CoreExt_Config_Ini</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Locale.php.html#3">CoreExt_Locale</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Validate/Email.php.html#3">CoreExt_Validate_Email</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="View/Abstract.php.html#3">CoreExt_View_Abstract</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/Abstract.php.html#6">CoreExt_Controller_Abstract</a></td><td class="text-right">54%</td></tr>
+       <tr><td><a href="Controller/Dispatcher/Strategy/PageStrategy.php.html#5">CoreExt_Controller_Dispatcher_Strategy_PageStrategy</a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Session/Storage/Default.php.html#5">CoreExt_Session_Storage_Default</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="DataMapper.php.html#3">CoreExt_DataMapper</a></td><td class="text-right">69%</td></tr>
+       <tr><td><a href="Controller/Front.php.html#3">CoreExt_Controller_Front</a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="Session/Storage/Abstract.php.html#3">CoreExt_Session_Storage_Abstract</a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="Validate/Abstract.php.html#3">CoreExt_Validate_Abstract</a></td><td class="text-right">86%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+         <th class="text-right">Complexity</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Config.class.php.html#3">CoreExt_Config</a></td><td class="text-right">0.0%</td><td class="text-right">24</td><td class="text-right">600</td></tr>
+       <tr><td><a href="Config/Ini.class.php.html#3">CoreExt_Config_Ini</a></td><td class="text-right">0.0%</td><td class="text-right">24</td><td class="text-right">600</td></tr>
+       <tr><td><a href="DataMapper.php.html#3">CoreExt_DataMapper</a></td><td class="text-right">69.3%</td><td class="text-right">85</td><td class="text-right">293</td></tr>
+       <tr><td><a href="Locale.php.html#3">CoreExt_Locale</a></td><td class="text-right">0.0%</td><td class="text-right">12</td><td class="text-right">156</td></tr>
+       <tr><td><a href="Controller/Abstract.php.html#6">CoreExt_Controller_Abstract</a></td><td class="text-right">54.2%</td><td class="text-right">21</td><td class="text-right">63</td></tr>
+       <tr><td><a href="Validate/Abstract.php.html#3">CoreExt_Validate_Abstract</a></td><td class="text-right">86.0%</td><td class="text-right">22</td><td class="text-right">23</td></tr>
+       <tr><td><a href="Controller/Front.php.html#3">CoreExt_Controller_Front</a></td><td class="text-right">78.3%</td><td class="text-right">15</td><td class="text-right">17</td></tr>
+       <tr><td><a href="Session/Storage/Default.php.html#5">CoreExt_Session_Storage_Default</a></td><td class="text-right">66.7%</td><td class="text-right">10</td><td class="text-right">13</td></tr>
+       <tr><td><a href="Validate/Email.php.html#3">CoreExt_Validate_Email</a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Session/Storage/Abstract.php.html#3">CoreExt_Session_Storage_Abstract</a></td><td class="text-right">81.8%</td><td class="text-right">10</td><td class="text-right">10</td></tr>
+       <tr><td><a href="Controller/Dispatcher/Strategy/PageStrategy.php.html#5">CoreExt_Controller_Dispatcher_Strategy_PageStrategy</a></td><td class="text-right">60.7%</td><td class="text-right">6</td><td class="text-right">8</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2 style="margin-top: 3rem;">Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodsCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Config.class.php.html#38"><abbr title="CoreExt_Config::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.class.php.html#73"><abbr title="CoreExt_Config::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.class.php.html#93"><abbr title="CoreExt_Config::getFrom">getFrom</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.class.php.html#108"><abbr title="CoreExt_Config::__get">__get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.class.php.html#118"><abbr title="CoreExt_Config::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.class.php.html#131"><abbr title="CoreExt_Config::count">count</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.class.php.html#139"><abbr title="CoreExt_Config::next">next</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.class.php.html#148"><abbr title="CoreExt_Config::rewind">rewind</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.class.php.html#157"><abbr title="CoreExt_Config::current">current</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.class.php.html#165"><abbr title="CoreExt_Config::key">key</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.class.php.html#173"><abbr title="CoreExt_Config::valid">valid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.class.php.html#194"><abbr title="CoreExt_Config::arrayMergeRecursiveDistinct">arrayMergeRecursiveDistinct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.class.php.html#219"><abbr title="CoreExt_Config::configErrorHandler">configErrorHandler</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config/Ini.class.php.html#30"><abbr title="CoreExt_Config_Ini::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config/Ini.class.php.html#42"><abbr title="CoreExt_Config_Ini::changeEnviroment">changeEnviroment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config/Ini.class.php.html#53"><abbr title="CoreExt_Config_Ini::hasEnviromentSection">hasEnviromentSection</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config/Ini.class.php.html#63"><abbr title="CoreExt_Config_Ini::changeSection">changeSection</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config/Ini.class.php.html#82"><abbr title="CoreExt_Config_Ini::loadFile">loadFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config/Ini.class.php.html#168"><abbr title="CoreExt_Config_Ini::processSection">processSection</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config/Ini.class.php.html#207"><abbr title="CoreExt_Config_Ini::processDirectives">processDirectives</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config/Ini.class.php.html#233"><abbr title="CoreExt_Config_Ini::dotCompact">dotCompact</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config/Ini.class.php.html#254"><abbr title="CoreExt_Config_Ini::getSettings">getSettings</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/Abstract.php.html#181"><abbr title="CoreExt_Controller_Abstract::redirect">redirect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/Abstract.php.html#201"><abbr title="CoreExt_Controller_Abstract::simpleRedirect">simpleRedirect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/Abstract.php.html#232"><abbr title="CoreExt_Controller_Abstract::redirectIf">redirectIf</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/Front.php.html#88"><abbr title="CoreExt_Controller_Front::dispatch">dispatch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/Front.php.html#100"><abbr title="CoreExt_Controller_Front::getViewContents">getViewContents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataMapper.php.html#81"><abbr title="CoreExt_DataMapper::setDefaultDbAdapter">setDefaultDbAdapter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataMapper.php.html#90"><abbr title="CoreExt_DataMapper::resetDefaultDbAdapter">resetDefaultDbAdapter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataMapper.php.html#144"><abbr title="CoreExt_DataMapper::getDbAdapter">getDbAdapter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataMapper.php.html#167"><abbr title="CoreExt_DataMapper::resourceName">resourceName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataMapper.php.html#350"><abbr title="CoreExt_DataMapper::_getSaveStatment">_getSaveStatment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataMapper.php.html#506"><abbr title="CoreExt_DataMapper::findAllUsingPreparedQuery">findAllUsingPreparedQuery</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataMapper.php.html#693"><abbr title="CoreExt_DataMapper::_cleanNullValuesToSave">_cleanNullValuesToSave</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity.php.html#440"><abbr title="CoreExt_Entity::setReferenceFile">setReferenceFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Locale.php.html#35"><abbr title="CoreExt_Locale::getInstance">getInstance</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Locale.php.html#49"><abbr title="CoreExt_Locale::setCulture">setCulture</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Locale.php.html#61"><abbr title="CoreExt_Locale::getCulture">getCulture</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Locale.php.html#83"><abbr title="CoreExt_Locale::setLocale">setLocale</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Locale.php.html#115"><abbr title="CoreExt_Locale::_setLocale">_setLocale</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Locale.php.html#123"><abbr title="CoreExt_Locale::resetLocale">resetLocale</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Locale.php.html#132"><abbr title="CoreExt_Locale::getCultureInfo">getCultureInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/Abstract.php.html#208"><abbr title="CoreExt_Session_Abstract::__isset">__isset</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/Storage/Abstract.php.html#103"><abbr title="CoreExt_Session_Storage_Abstract::getSessionId">getSessionId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/Storage/Abstract.php.html#113"><abbr title="CoreExt_Session_Storage_Abstract::isStarted">isStarted</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/Storage/Default.php.html#40"><abbr title="CoreExt_Session_Storage_Default::start">start</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/Storage/Default.php.html#48"><abbr title="CoreExt_Session_Storage_Default::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/Storage/Default.php.html#56"><abbr title="CoreExt_Session_Storage_Default::regenerate">regenerate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/Storage/Default.php.html#66"><abbr title="CoreExt_Session_Storage_Default::shutdown">shutdown</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Validate/Abstract.php.html#242"><abbr title="CoreExt_Validate_Abstract::getValue">getValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Validate/Email.php.html#8"><abbr title="CoreExt_Validate_Email::_getDefaultOptions">_getDefaultOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Validate/Email.php.html#19"><abbr title="CoreExt_Validate_Email::_validate">_validate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="View/Abstract.php.html#18"><abbr title="CoreExt_View_Abstract::setContents">setContents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="View/Abstract.php.html#30"><abbr title="CoreExt_View_Abstract::getContents">getContents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="View/Abstract.php.html#40"><abbr title="CoreExt_View_Abstract::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="View/Helper/TableHelper.php.html#262"><abbr title="CoreExt_View_Helper_TableHelper::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataMapper.php.html#125"><abbr title="CoreExt_DataMapper::_getDbAdapter">_getDbAdapter</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="DataMapper.php.html#243"><abbr title="CoreExt_DataMapper::_getFindAllStatment">_getFindAllStatment</abbr></a></td><td class="text-right">48%</td></tr>
+       <tr><td><a href="Controller/Request.php.html#14"><abbr title="CoreExt_Controller_Request::__construct">__construct</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Validate/Numeric.php.html#60"><abbr title="CoreExt_Validate_Numeric::_sanitize">_sanitize</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Controller/Dispatcher/Strategy/PageStrategy.php.html#77"><abbr title="CoreExt_Controller_Dispatcher_Strategy_PageStrategy::dispatch">dispatch</abbr></a></td><td class="text-right">54%</td></tr>
+       <tr><td><a href="Validate/Abstract.php.html#213"><abbr title="CoreExt_Validate_Abstract::_getErrorMessage">_getErrorMessage</abbr></a></td><td class="text-right">61%</td></tr>
+       <tr><td><a href="Controller/Front.php.html#158"><abbr title="CoreExt_Controller_Front::_getControllerStrategy">_getControllerStrategy</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="DataMapper.php.html#672"><abbr title="CoreExt_DataMapper::_cleanData">_cleanData</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="DataMapper.php.html#559"><abbr title="CoreExt_DataMapper::exists">exists</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="DataMapper.php.html#213"><abbr title="CoreExt_DataMapper::_getTableColumn">_getTableColumn</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="DataMapper.php.html#577"><abbr title="CoreExt_DataMapper::save">save</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="DataMapper.php.html#646"><abbr title="CoreExt_DataMapper::buildKeyToFind">buildKeyToFind</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="DataMapper.php.html#727"><abbr title="CoreExt_DataMapper::_mapData">_mapData</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="Entity.php.html#1020"><abbr title="CoreExt_Entity::_getValue">_getValue</abbr></a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="Entity.php.html#511"><abbr title="CoreExt_Entity::_isReferenceOf">_isReferenceOf</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="Entity.php.html#303"><abbr title="CoreExt_Entity::_loadReference">_loadReference</abbr></a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+         <th class="text-right">Complexity</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Config/Ini.class.php.html#82"><abbr title="CoreExt_Config_Ini::loadFile">loadFile</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">7</td><td class="text-right">56</td></tr>
+       <tr><td><a href="DataMapper.php.html#506"><abbr title="CoreExt_DataMapper::findAllUsingPreparedQuery">findAllUsingPreparedQuery</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">6</td><td class="text-right">42</td></tr>
+       <tr><td><a href="Config.class.php.html#194"><abbr title="CoreExt_Config::arrayMergeRecursiveDistinct">arrayMergeRecursiveDistinct</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">5</td><td class="text-right">30</td></tr>
+       <tr><td><a href="DataMapper.php.html#693"><abbr title="CoreExt_DataMapper::_cleanNullValuesToSave">_cleanNullValuesToSave</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">5</td><td class="text-right">30</td></tr>
+       <tr><td><a href="Config/Ini.class.php.html#233"><abbr title="CoreExt_Config_Ini::dotCompact">dotCompact</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="Locale.php.html#83"><abbr title="CoreExt_Locale::setLocale">setLocale</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DataMapper.php.html#243"><abbr title="CoreExt_DataMapper::_getFindAllStatment">_getFindAllStatment</abbr></a></td><td class="text-right">48.3%</td><td class="text-right">8</td><td class="text-right">16</td></tr>
+       <tr><td><a href="Config.class.php.html#38"><abbr title="CoreExt_Config::__construct">__construct</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Config.class.php.html#73"><abbr title="CoreExt_Config::get">get</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Config/Ini.class.php.html#168"><abbr title="CoreExt_Config_Ini::processSection">processSection</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Config/Ini.class.php.html#207"><abbr title="CoreExt_Config_Ini::processDirectives">processDirectives</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Locale.php.html#132"><abbr title="CoreExt_Locale::getCultureInfo">getCultureInfo</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Entity.php.html#1020"><abbr title="CoreExt_Entity::_getValue">_getValue</abbr></a></td><td class="text-right">86.4%</td><td class="text-right">9</td><td class="text-right">9</td></tr>
+       <tr><td><a href="DataMapper.php.html#577"><abbr title="CoreExt_DataMapper::save">save</abbr></a></td><td class="text-right">85.7%</td><td class="text-right">7</td><td class="text-right">7</td></tr>
+       <tr><td><a href="Entity.php.html#303"><abbr title="CoreExt_Entity::_loadReference">_loadReference</abbr></a></td><td class="text-right">88.2%</td><td class="text-right">7</td><td class="text-right">7</td></tr>
+       <tr><td><a href="Config.class.php.html#93"><abbr title="CoreExt_Config::getFrom">getFrom</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Config.class.php.html#118"><abbr title="CoreExt_Config::toArray">toArray</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Config.class.php.html#173"><abbr title="CoreExt_Config::valid">valid</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Config/Ini.class.php.html#53"><abbr title="CoreExt_Config_Ini::hasEnviromentSection">hasEnviromentSection</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Config/Ini.class.php.html#254"><abbr title="CoreExt_Config_Ini::getSettings">getSettings</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/Abstract.php.html#181"><abbr title="CoreExt_Controller_Abstract::redirect">redirect</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/Abstract.php.html#201"><abbr title="CoreExt_Controller_Abstract::simpleRedirect">simpleRedirect</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/Abstract.php.html#232"><abbr title="CoreExt_Controller_Abstract::redirectIf">redirectIf</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DataMapper.php.html#350"><abbr title="CoreExt_DataMapper::_getSaveStatment">_getSaveStatment</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Validate/Abstract.php.html#213"><abbr title="CoreExt_Validate_Abstract::_getErrorMessage">_getErrorMessage</abbr></a></td><td class="text-right">61.5%</td><td class="text-right">5</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Validate/Email.php.html#19"><abbr title="CoreExt_Validate_Email::_validate">_validate</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DataMapper.php.html#125"><abbr title="CoreExt_DataMapper::_getDbAdapter">_getDbAdapter</abbr></a></td><td class="text-right">33.3%</td><td class="text-right">3</td><td class="text-right">5</td></tr>
+       <tr><td><a href="DataMapper.php.html#672"><abbr title="CoreExt_DataMapper::_cleanData">_cleanData</abbr></a></td><td class="text-right">71.4%</td><td class="text-right">5</td><td class="text-right">5</td></tr>
+       <tr><td><a href="Controller/Front.php.html#158"><abbr title="CoreExt_Controller_Front::_getControllerStrategy">_getControllerStrategy</abbr></a></td><td class="text-right">66.7%</td><td class="text-right">4</td><td class="text-right">4</td></tr>
+       <tr><td><a href="DataMapper.php.html#646"><abbr title="CoreExt_DataMapper::buildKeyToFind">buildKeyToFind</abbr></a></td><td class="text-right">85.7%</td><td class="text-right">4</td><td class="text-right">4</td></tr>
+       <tr><td><a href="DataMapper.php.html#727"><abbr title="CoreExt_DataMapper::_mapData">_mapData</abbr></a></td><td class="text-right">85.7%</td><td class="text-right">4</td><td class="text-right">4</td></tr>
+       <tr><td><a href="Entity.php.html#511"><abbr title="CoreExt_Entity::_isReferenceOf">_isReferenceOf</abbr></a></td><td class="text-right">87.5%</td><td class="text-right">4</td><td class="text-right">4</td></tr>
+       <tr><td><a href="Validate/Numeric.php.html#60"><abbr title="CoreExt_Validate_Numeric::_sanitize">_sanitize</abbr></a></td><td class="text-right">50.0%</td><td class="text-right">3</td><td class="text-right">4</td></tr>
+       <tr><td><a href="Controller/Dispatcher/Strategy/PageStrategy.php.html#77"><abbr title="CoreExt_Controller_Dispatcher_Strategy_PageStrategy::dispatch">dispatch</abbr></a></td><td class="text-right">54.2%</td><td class="text-right">3</td><td class="text-right">3</td></tr>
+       <tr><td><a href="DataMapper.php.html#213"><abbr title="CoreExt_DataMapper::_getTableColumn">_getTableColumn</abbr></a></td><td class="text-right">80.0%</td><td class="text-right">3</td><td class="text-right">3</td></tr>
+       <tr><td><a href="Controller/Request.php.html#14"><abbr title="CoreExt_Controller_Request::__construct">__construct</abbr></a></td><td class="text-right">50.0%</td><td class="text-right">2</td><td class="text-right">2</td></tr>
+       <tr><td><a href="DataMapper.php.html#559"><abbr title="CoreExt_DataMapper::exists">exists</abbr></a></td><td class="text-right">75.0%</td><td class="text-right">2</td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 12.4.0</a> using <a href="https://www.php.net/" target="_top">PHP 8.3.6</a> and <a href="https://phpunit.de/">PHPUnit 12.3.8</a> at Thu Oct 30 8:17:42 -03 2025.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../../_js/billboard.pkgd.min.js?v=12.4.0" type="text/javascript"></script>
+  <script type="application/json" id="complexity_class">[[0,24,"Config.class.php.html#3","CoreExt_Config","600"],[0,24,"Config\/Ini.class.php.html#3","CoreExt_Config_Ini","600"],[0,12,"Locale.php.html#3","CoreExt_Locale","156"],[0,3,"Validate\/Email.php.html#3","CoreExt_Validate_Email","12"],[0,3,"View\/Abstract.php.html#3","CoreExt_View_Abstract","12"],[54.166666666666664,21,"Controller\/Abstract.php.html#6","CoreExt_Controller_Abstract","63.46"],[60.71428571428571,6,"Controller\/Dispatcher\/Strategy\/PageStrategy.php.html#5","CoreExt_Controller_Dispatcher_Strategy_PageStrategy","8.18"],[66.66666666666666,10,"Session\/Storage\/Default.php.html#5","CoreExt_Session_Storage_Default","13.70"],[69.31216931216932,85,"DataMapper.php.html#3","CoreExt_DataMapper","293.80"],[78.26086956521739,15,"Controller\/Front.php.html#3","CoreExt_Controller_Front","17.31"],[81.81818181818183,10,"Session\/Storage\/Abstract.php.html#3","CoreExt_Session_Storage_Abstract","10.60"],[86.04651162790698,22,"Validate\/Abstract.php.html#3","CoreExt_Validate_Abstract","23.31"],[92.3076923076923,20,"Controller\/Request.php.html#3","CoreExt_Controller_Request","20.18"],[92.85714285714286,12,"Validate\/Numeric.php.html#3","CoreExt_Validate_Numeric","12.05"],[95.65217391304348,28,"Session\/Abstract.php.html#3","CoreExt_Session_Abstract","28"],[96.30996309963099,133,"Entity.php.html#3","CoreExt_Entity","133"],[97.05882352941177,18,"Controller\/Dispatcher\/Abstract.php.html#3","CoreExt_Controller_Dispatcher_Abstract","18"],[98.48484848484848,24,"View\/Helper\/TableHelper.php.html#3","CoreExt_View_Helper_TableHelper","24"],[100,0,"Controller\/Dispatcher\/Exception.php.html#3","CoreExt_Controller_Dispatcher_Exception","0"],[100,0,"Controller\/Dispatcher\/Standard.php.html#3","CoreExt_Controller_Dispatcher_Standard","0"],[100,4,"Controller\/Dispatcher\/Strategy\/FrontStrategy.php.html#3","CoreExt_Controller_Dispatcher_Strategy_FrontStrategy","4"],[100,0,"Controller\/Page.php.html#3","CoreExt_Controller_Page","0"],[100,0,"DataMapper\/Exception.php.html#3","CoreExt_DataMapper_Exception","0"],[100,9,"Enum.php.html#3","CoreExt_Enum","9"],[100,0,"Exception.php.html#5","CoreExt_Exception","0"],[100,0,"Exception\/FileNotFoundException.php.html#3","CoreExt_Exception_FileNotFoundException","0"],[100,0,"Exception\/InvalidArgumentException.php.html#3","CoreExt_Exception_InvalidArgumentException","0"],[100,0,"Service\/Exception.php.html#3","CoreExt_Service_Exception","0"],[100,0,"Session.php.html#3","CoreExt_Session","0"],[100,4,"Singleton.php.html#3","CoreExt_Singleton","4"],[100,10,"Validate\/Choice.php.html#3","CoreExt_Validate_Choice","10"],[100,1,"Validate\/ChoiceMultiple.php.html#3","CoreExt_Validate_ChoiceMultiple","1"],[100,7,"Validate\/String.php.html#3","CoreExt_Validate_String","7"],[100,0,"View.php.html#3","CoreExt_View","0"],[100,0,"View\/Helper\/Abstract.php.html#3","CoreExt_View_Helper_Abstract","0"],[100,16,"View\/Helper\/UrlHelper.php.html#3","CoreExt_View_Helper_UrlHelper","16"]]</script>
+  <script type="application/json" id="complexity_method">[[0,3,"Config.class.php.html#38","CoreExt_Config::__construct","12"],[0,3,"Config.class.php.html#73","CoreExt_Config::get","12"],[0,2,"Config.class.php.html#93","CoreExt_Config::getFrom","6"],[0,1,"Config.class.php.html#108","CoreExt_Config::__get","2"],[0,2,"Config.class.php.html#118","CoreExt_Config::toArray","6"],[0,1,"Config.class.php.html#131","CoreExt_Config::count","2"],[0,1,"Config.class.php.html#139","CoreExt_Config::next","2"],[0,1,"Config.class.php.html#148","CoreExt_Config::rewind","2"],[0,1,"Config.class.php.html#157","CoreExt_Config::current","2"],[0,1,"Config.class.php.html#165","CoreExt_Config::key","2"],[0,2,"Config.class.php.html#173","CoreExt_Config::valid","6"],[0,5,"Config.class.php.html#194","CoreExt_Config::arrayMergeRecursiveDistinct","30"],[0,1,"Config.class.php.html#219","CoreExt_Config::configErrorHandler","2"],[0,1,"Config\/Ini.class.php.html#30","CoreExt_Config_Ini::__construct","2"],[0,1,"Config\/Ini.class.php.html#42","CoreExt_Config_Ini::changeEnviroment","2"],[0,2,"Config\/Ini.class.php.html#53","CoreExt_Config_Ini::hasEnviromentSection","6"],[0,1,"Config\/Ini.class.php.html#63","CoreExt_Config_Ini::changeSection","2"],[0,7,"Config\/Ini.class.php.html#82","CoreExt_Config_Ini::loadFile","56"],[0,3,"Config\/Ini.class.php.html#168","CoreExt_Config_Ini::processSection","12"],[0,3,"Config\/Ini.class.php.html#207","CoreExt_Config_Ini::processDirectives","12"],[0,4,"Config\/Ini.class.php.html#233","CoreExt_Config_Ini::dotCompact","20"],[0,2,"Config\/Ini.class.php.html#254","CoreExt_Config_Ini::getSettings","6"],[0,2,"Controller\/Abstract.php.html#181","CoreExt_Controller_Abstract::redirect","6"],[0,2,"Controller\/Abstract.php.html#201","CoreExt_Controller_Abstract::simpleRedirect","6"],[0,2,"Controller\/Abstract.php.html#232","CoreExt_Controller_Abstract::redirectIf","6"],[0,1,"Controller\/Front.php.html#88","CoreExt_Controller_Front::dispatch","2"],[0,1,"Controller\/Front.php.html#100","CoreExt_Controller_Front::getViewContents","2"],[0,1,"DataMapper.php.html#81","CoreExt_DataMapper::setDefaultDbAdapter","2"],[0,1,"DataMapper.php.html#90","CoreExt_DataMapper::resetDefaultDbAdapter","2"],[0,1,"DataMapper.php.html#144","CoreExt_DataMapper::getDbAdapter","2"],[0,1,"DataMapper.php.html#167","CoreExt_DataMapper::resourceName","2"],[0,2,"DataMapper.php.html#350","CoreExt_DataMapper::_getSaveStatment","6"],[0,6,"DataMapper.php.html#506","CoreExt_DataMapper::findAllUsingPreparedQuery","42"],[0,5,"DataMapper.php.html#693","CoreExt_DataMapper::_cleanNullValuesToSave","30"],[0,1,"Entity.php.html#440","CoreExt_Entity::setReferenceFile","2"],[0,1,"Locale.php.html#35","CoreExt_Locale::getInstance","2"],[0,1,"Locale.php.html#49","CoreExt_Locale::setCulture","2"],[0,1,"Locale.php.html#61","CoreExt_Locale::getCulture","2"],[0,4,"Locale.php.html#83","CoreExt_Locale::setLocale","20"],[0,1,"Locale.php.html#115","CoreExt_Locale::_setLocale","2"],[0,1,"Locale.php.html#123","CoreExt_Locale::resetLocale","2"],[0,3,"Locale.php.html#132","CoreExt_Locale::getCultureInfo","12"],[0,1,"Session\/Abstract.php.html#208","CoreExt_Session_Abstract::__isset","2"],[0,1,"Session\/Storage\/Abstract.php.html#103","CoreExt_Session_Storage_Abstract::getSessionId","2"],[0,1,"Session\/Storage\/Abstract.php.html#113","CoreExt_Session_Storage_Abstract::isStarted","2"],[0,1,"Session\/Storage\/Default.php.html#40","CoreExt_Session_Storage_Default::start","2"],[0,1,"Session\/Storage\/Default.php.html#48","CoreExt_Session_Storage_Default::destroy","2"],[0,1,"Session\/Storage\/Default.php.html#56","CoreExt_Session_Storage_Default::regenerate","2"],[0,1,"Session\/Storage\/Default.php.html#66","CoreExt_Session_Storage_Default::shutdown","2"],[0,1,"Validate\/Abstract.php.html#242","CoreExt_Validate_Abstract::getValue","2"],[0,1,"Validate\/Email.php.html#8","CoreExt_Validate_Email::_getDefaultOptions","2"],[0,2,"Validate\/Email.php.html#19","CoreExt_Validate_Email::_validate","6"],[0,1,"View\/Abstract.php.html#18","CoreExt_View_Abstract::setContents","2"],[0,1,"View\/Abstract.php.html#30","CoreExt_View_Abstract::getContents","2"],[0,1,"View\/Abstract.php.html#40","CoreExt_View_Abstract::__toString","2"],[0,1,"View\/Helper\/TableHelper.php.html#262","CoreExt_View_Helper_TableHelper::__toString","2"],[33.33333333333333,3,"DataMapper.php.html#125","CoreExt_DataMapper::_getDbAdapter","5.67"],[48.275862068965516,8,"DataMapper.php.html#243","CoreExt_DataMapper::_getFindAllStatment","16.86"],[50,2,"Controller\/Request.php.html#14","CoreExt_Controller_Request::__construct","2.50"],[50,3,"Validate\/Numeric.php.html#60","CoreExt_Validate_Numeric::_sanitize","4.12"],[54.166666666666664,3,"Controller\/Dispatcher\/Strategy\/PageStrategy.php.html#77","CoreExt_Controller_Dispatcher_Strategy_PageStrategy::dispatch","3.87"],[61.53846153846154,5,"Validate\/Abstract.php.html#213","CoreExt_Validate_Abstract::_getErrorMessage","6.42"],[66.66666666666666,4,"Controller\/Front.php.html#158","CoreExt_Controller_Front::_getControllerStrategy","4.59"],[71.42857142857143,5,"DataMapper.php.html#672","CoreExt_DataMapper::_cleanData","5.58"],[75,2,"DataMapper.php.html#559","CoreExt_DataMapper::exists","2.06"],[80,3,"DataMapper.php.html#213","CoreExt_DataMapper::_getTableColumn","3.07"],[85.71428571428571,7,"DataMapper.php.html#577","CoreExt_DataMapper::save","7.14"],[85.71428571428571,4,"DataMapper.php.html#646","CoreExt_DataMapper::buildKeyToFind","4.05"],[85.71428571428571,4,"DataMapper.php.html#727","CoreExt_DataMapper::_mapData","4.05"],[86.36363636363636,9,"Entity.php.html#1020","CoreExt_Entity::_getValue","9.21"],[87.5,4,"Entity.php.html#511","CoreExt_Entity::_isReferenceOf","4.03"],[88.23529411764706,7,"Entity.php.html#303","CoreExt_Entity::_loadReference","7.08"],[90,4,"DataMapper.php.html#182","CoreExt_DataMapper::_getTableColumnsArray","4.02"],[90.9090909090909,3,"Session\/Abstract.php.html#36","CoreExt_Session_Abstract::setOptions","3.01"],[91.66666666666666,7,"Controller\/Request.php.html#91","CoreExt_Controller_Request::get","7.03"],[91.66666666666666,4,"Entity.php.html#585","CoreExt_Entity::addClassToStorage","4.01"],[92.85714285714286,5,"Controller\/Dispatcher\/Abstract.php.html#113","CoreExt_Controller_Dispatcher_Abstract::_getUrlPath","5.01"],[94.44444444444444,7,"Entity.php.html#359","CoreExt_Entity::setReference","7.01"],[95.83333333333334,7,"DataMapper.php.html#390","CoreExt_DataMapper::_getUpdateStatment","7"],[100,2,"Controller\/Abstract.php.html#35","CoreExt_Controller_Abstract::setOptions","2"],[100,1,"Controller\/Abstract.php.html#54","CoreExt_Controller_Abstract::getOptions","1"],[100,1,"Controller\/Abstract.php.html#65","CoreExt_Controller_Abstract::_hasOption","1"],[100,2,"Controller\/Abstract.php.html#77","CoreExt_Controller_Abstract::getOption","2"],[100,1,"Controller\/Abstract.php.html#88","CoreExt_Controller_Abstract::setRequest","1"],[100,2,"Controller\/Abstract.php.html#104","CoreExt_Controller_Abstract::getRequest","2"],[100,1,"Controller\/Abstract.php.html#119","CoreExt_Controller_Abstract::setSession","1"],[100,2,"Controller\/Abstract.php.html#134","CoreExt_Controller_Abstract::getSession","2"],[100,1,"Controller\/Abstract.php.html#149","CoreExt_Controller_Abstract::setDispatcher","1"],[100,2,"Controller\/Abstract.php.html#161","CoreExt_Controller_Abstract::getDispatcher","2"],[100,2,"Controller\/Dispatcher\/Abstract.php.html#25","CoreExt_Controller_Dispatcher_Abstract::setOptions","2"],[100,1,"Controller\/Dispatcher\/Abstract.php.html#44","CoreExt_Controller_Dispatcher_Abstract::getOptions","1"],[100,2,"Controller\/Dispatcher\/Abstract.php.html#56","CoreExt_Controller_Dispatcher_Abstract::getOption","2"],[100,1,"Controller\/Dispatcher\/Abstract.php.html#67","CoreExt_Controller_Dispatcher_Abstract::_hasOption","1"],[100,1,"Controller\/Dispatcher\/Abstract.php.html#75","CoreExt_Controller_Dispatcher_Abstract::setRequest","1"],[100,2,"Controller\/Dispatcher\/Abstract.php.html#85","CoreExt_Controller_Dispatcher_Abstract::getRequest","2"],[100,2,"Controller\/Dispatcher\/Abstract.php.html#147","CoreExt_Controller_Dispatcher_Abstract::getControllerName","2"],[100,2,"Controller\/Dispatcher\/Abstract.php.html#157","CoreExt_Controller_Dispatcher_Abstract::getActionName","2"],[100,1,"Controller\/Dispatcher\/Strategy\/FrontStrategy.php.html#17","CoreExt_Controller_Dispatcher_Strategy_FrontStrategy::__construct","1"],[100,1,"Controller\/Dispatcher\/Strategy\/FrontStrategy.php.html#25","CoreExt_Controller_Dispatcher_Strategy_FrontStrategy::setController","1"],[100,1,"Controller\/Dispatcher\/Strategy\/FrontStrategy.php.html#35","CoreExt_Controller_Dispatcher_Strategy_FrontStrategy::getController","1"],[100,1,"Controller\/Dispatcher\/Strategy\/FrontStrategy.php.html#45","CoreExt_Controller_Dispatcher_Strategy_FrontStrategy::dispatch","1"],[100,1,"Controller\/Dispatcher\/Strategy\/PageStrategy.php.html#19","CoreExt_Controller_Dispatcher_Strategy_PageStrategy::__construct","1"],[100,1,"Controller\/Dispatcher\/Strategy\/PageStrategy.php.html#27","CoreExt_Controller_Dispatcher_Strategy_PageStrategy::setController","1"],[100,1,"Controller\/Dispatcher\/Strategy\/PageStrategy.php.html#37","CoreExt_Controller_Dispatcher_Strategy_PageStrategy::getController","1"],[100,1,"Controller\/Front.php.html#50","CoreExt_Controller_Front::__construct","1"],[100,2,"Controller\/Front.php.html#60","CoreExt_Controller_Front::getInstance","2"],[100,1,"Controller\/Front.php.html#74","CoreExt_Controller_Front::resetOptions","1"],[100,1,"Controller\/Front.php.html#111","CoreExt_Controller_Front::setView","1"],[100,2,"Controller\/Front.php.html#126","CoreExt_Controller_Front::getView","2"],[100,2,"Controller\/Front.php.html#144","CoreExt_Controller_Front::getDispatcher","2"],[100,2,"Controller\/Request.php.html#27","CoreExt_Controller_Request::setOptions","2"],[100,1,"Controller\/Request.php.html#46","CoreExt_Controller_Request::getOptions","1"],[100,1,"Controller\/Request.php.html#57","CoreExt_Controller_Request::_hasOption","1"],[100,2,"Controller\/Request.php.html#69","CoreExt_Controller_Request::_getOption","2"],[100,1,"Controller\/Request.php.html#80","CoreExt_Controller_Request::__get","1"],[100,1,"Controller\/Request.php.html#124","CoreExt_Controller_Request::__isset","1"],[100,1,"Controller\/Request.php.html#137","CoreExt_Controller_Request::setBaseurl","1"],[100,2,"Controller\/Request.php.html#154","CoreExt_Controller_Request::getBaseurl","2"],[100,2,"DataMapper.php.html#69","CoreExt_DataMapper::__construct","2"],[100,1,"DataMapper.php.html#102","CoreExt_DataMapper::_setDbAdapter","1"],[100,2,"DataMapper.php.html#155","CoreExt_DataMapper::_getTableName","2"],[100,1,"DataMapper.php.html#232","CoreExt_DataMapper::_getTableColumns","1"],[100,3,"DataMapper.php.html#313","CoreExt_DataMapper::_getFindStatment","3"],[100,2,"DataMapper.php.html#449","CoreExt_DataMapper::_getDeleteStatment","2"],[100,5,"DataMapper.php.html#473","CoreExt_DataMapper::findAll","5"],[100,2,"DataMapper.php.html#539","CoreExt_DataMapper::find","2"],[100,1,"DataMapper.php.html#634","CoreExt_DataMapper::delete","1"],[100,1,"DataMapper.php.html#667","CoreExt_DataMapper::createNewEntityInstance","1"],[100,1,"DataMapper.php.html#712","CoreExt_DataMapper::_createEntityObject","1"],[100,1,"Entity.php.html#104","CoreExt_Entity::__construct","1"],[100,1,"Entity.php.html#117","CoreExt_Entity::_createIdentityField","1"],[100,2,"Entity.php.html#132","CoreExt_Entity::setOptions","2"],[100,15,"Entity.php.html#154","CoreExt_Entity::__set","15"],[100,5,"Entity.php.html#224","CoreExt_Entity::__get","5"],[100,2,"Entity.php.html#246","CoreExt_Entity::get","2"],[100,1,"Entity.php.html#263","CoreExt_Entity::__isset","1"],[100,1,"Entity.php.html#277","CoreExt_Entity::__unset","1"],[100,1,"Entity.php.html#289","CoreExt_Entity::__toString","1"],[100,1,"Entity.php.html#344","CoreExt_Entity::_hasReference","1"],[100,1,"Entity.php.html#402","CoreExt_Entity::setReferenceValue","1"],[100,4,"Entity.php.html#419","CoreExt_Entity::setReferenceClass","4"],[100,2,"Entity.php.html#453","CoreExt_Entity::_getReferenceValue","2"],[100,1,"Entity.php.html#464","CoreExt_Entity::_getReferenceClass","1"],[100,1,"Entity.php.html#475","CoreExt_Entity::_isReferenceDataMapper","1"],[100,1,"Entity.php.html#493","CoreExt_Entity::_isReferenceEnum","1"],[100,1,"Entity.php.html#537","CoreExt_Entity::setDataMapper","1"],[100,1,"Entity.php.html#549","CoreExt_Entity::getDataMapper","1"],[100,7,"Entity.php.html#615","CoreExt_Entity::_setStorageClassInstance","7"],[100,2,"Entity.php.html#646","CoreExt_Entity::getClassFromStorage","2"],[100,2,"Entity.php.html#661","CoreExt_Entity::hasClassInStorage","2"],[100,4,"Entity.php.html#685","CoreExt_Entity::isValid","4"],[100,4,"Entity.php.html#708","CoreExt_Entity::isNull","4"],[100,1,"Entity.php.html#732","CoreExt_Entity::markOld","1"],[100,1,"Entity.php.html#743","CoreExt_Entity::setNew","1"],[100,1,"Entity.php.html#757","CoreExt_Entity::isNew","1"],[100,2,"Entity.php.html#771","CoreExt_Entity::_isValidProperty","2"],[100,3,"Entity.php.html#791","CoreExt_Entity::_isValidEntity","3"],[100,2,"Entity.php.html#809","CoreExt_Entity::setValidator","2"],[100,2,"Entity.php.html#824","CoreExt_Entity::getValidator","2"],[100,4,"Entity.php.html#843","CoreExt_Entity::setValidatorCollection","4"],[100,1,"Entity.php.html#859","CoreExt_Entity::getValidatorCollection","1"],[100,1,"Entity.php.html#873","CoreExt_Entity::_setDefaultValidatorCollection","1"],[100,3,"Entity.php.html#896","CoreExt_Entity::validateIfEquals","3"],[100,1,"Entity.php.html#927","CoreExt_Entity::_setError","1"],[100,1,"Entity.php.html#940","CoreExt_Entity::getError","1"],[100,1,"Entity.php.html#950","CoreExt_Entity::getErrors","1"],[100,2,"Entity.php.html#961","CoreExt_Entity::hasError","2"],[100,3,"Entity.php.html#975","CoreExt_Entity::hasErrors","3"],[100,1,"Entity.php.html#991","CoreExt_Entity::_setDefaultErrorCollectionItems","1"],[100,2,"Entity.php.html#1088","CoreExt_Entity::filterAttr","2"],[100,3,"Entity.php.html#1114","CoreExt_Entity::entityFilterAttr","3"],[100,2,"Entity.php.html#1139","CoreExt_Entity::toArray","2"],[100,3,"Entity.php.html#1156","CoreExt_Entity::toDataArray","3"],[100,1,"Enum.php.html#18","CoreExt_Enum::getValue","1"],[100,1,"Enum.php.html#29","CoreExt_Enum::getValues","1"],[100,1,"Enum.php.html#41","CoreExt_Enum::getKey","1"],[100,1,"Enum.php.html#52","CoreExt_Enum::getKeys","1"],[100,1,"Enum.php.html#63","CoreExt_Enum::getEnums","1"],[100,1,"Enum.php.html#75","CoreExt_Enum::offsetExists","1"],[100,1,"Enum.php.html#87","CoreExt_Enum::offsetUnset","1"],[100,1,"Enum.php.html#105","CoreExt_Enum::offsetSet","1"],[100,1,"Enum.php.html#119","CoreExt_Enum::offsetGet","1"],[100,1,"Session\/Abstract.php.html#28","CoreExt_Session_Abstract::__construct","1"],[100,1,"Session\/Abstract.php.html#61","CoreExt_Session_Abstract::getOptions","1"],[100,1,"Session\/Abstract.php.html#72","CoreExt_Session_Abstract::_hasOption","1"],[100,2,"Session\/Abstract.php.html#84","CoreExt_Session_Abstract::getOption","2"],[100,1,"Session\/Abstract.php.html#92","CoreExt_Session_Abstract::setSessionStorage","1"],[100,2,"Session\/Abstract.php.html#102","CoreExt_Session_Abstract::getSessionStorage","2"],[100,2,"Session\/Abstract.php.html#123","CoreExt_Session_Abstract::getSessionData","2"],[100,1,"Session\/Abstract.php.html#135","CoreExt_Session_Abstract::offsetExists","1"],[100,2,"Session\/Abstract.php.html#146","CoreExt_Session_Abstract::offsetGet","2"],[100,1,"Session\/Abstract.php.html#159","CoreExt_Session_Abstract::offsetSet","1"],[100,1,"Session\/Abstract.php.html#168","CoreExt_Session_Abstract::offsetUnset","1"],[100,1,"Session\/Abstract.php.html#182","CoreExt_Session_Abstract::__set","1"],[100,1,"Session\/Abstract.php.html#195","CoreExt_Session_Abstract::__get","1"],[100,1,"Session\/Abstract.php.html#220","CoreExt_Session_Abstract::__unset","1"],[100,1,"Session\/Abstract.php.html#230","CoreExt_Session_Abstract::count","1"],[100,1,"Session\/Abstract.php.html#243","CoreExt_Session_Abstract::current","1"],[100,1,"Session\/Abstract.php.html#254","CoreExt_Session_Abstract::key","1"],[100,1,"Session\/Abstract.php.html#265","CoreExt_Session_Abstract::next","1"],[100,1,"Session\/Abstract.php.html#276","CoreExt_Session_Abstract::rewind","1"],[100,1,"Session\/Abstract.php.html#287","CoreExt_Session_Abstract::valid","1"],[100,2,"Session\/Storage\/Abstract.php.html#36","CoreExt_Session_Storage_Abstract::__construct","2"],[100,1,"Session\/Storage\/Abstract.php.html#52","CoreExt_Session_Storage_Abstract::_init","1"],[100,1,"Session\/Storage\/Abstract.php.html#60","CoreExt_Session_Storage_Abstract::setOptions","1"],[100,1,"Session\/Storage\/Abstract.php.html#70","CoreExt_Session_Storage_Abstract::getOptions","1"],[100,1,"Session\/Storage\/Abstract.php.html#81","CoreExt_Session_Storage_Abstract::_hasOption","1"],[100,2,"Session\/Storage\/Abstract.php.html#93","CoreExt_Session_Storage_Abstract::getOption","2"],[100,0,"Session\/Storage\/Abstract.php.html#127","CoreExt_Session_Storage_Abstract::getSessionData","0"],[100,2,"Session\/Storage\/Default.php.html#10","CoreExt_Session_Storage_Default::read","2"],[100,1,"Session\/Storage\/Default.php.html#24","CoreExt_Session_Storage_Default::write","1"],[100,1,"Session\/Storage\/Default.php.html#32","CoreExt_Session_Storage_Default::remove","1"],[100,1,"Session\/Storage\/Default.php.html#74","CoreExt_Session_Storage_Default::count","1"],[100,1,"Session\/Storage\/Default.php.html#82","CoreExt_Session_Storage_Default::getSessionData","1"],[100,1,"Singleton.php.html#15","CoreExt_Singleton::__construct","1"],[100,1,"Singleton.php.html#38","CoreExt_Singleton::getInstance","1"],[100,2,"Singleton.php.html#49","CoreExt_Singleton::_getInstance","2"],[100,1,"Validate\/Abstract.php.html#48","CoreExt_Validate_Abstract::__construct","1"],[100,2,"Validate\/Abstract.php.html#65","CoreExt_Validate_Abstract::setOptions","2"],[100,1,"Validate\/Abstract.php.html#82","CoreExt_Validate_Abstract::getOptions","1"],[100,2,"Validate\/Abstract.php.html#93","CoreExt_Validate_Abstract::_hasOption","2"],[100,2,"Validate\/Abstract.php.html#107","CoreExt_Validate_Abstract::getOption","2"],[100,0,"Validate\/Abstract.php.html#118","CoreExt_Validate_Abstract::_getDefaultOptions","0"],[100,5,"Validate\/Abstract.php.html#123","CoreExt_Validate_Abstract::isValid","5"],[100,0,"Validate\/Abstract.php.html#148","CoreExt_Validate_Abstract::_validate","0"],[100,1,"Validate\/Abstract.php.html#156","CoreExt_Validate_Abstract::_sanitize","1"],[100,1,"Validate\/Abstract.php.html#170","CoreExt_Validate_Abstract::_isEmpty","1"],[100,1,"Validate\/Abstract.php.html#250","CoreExt_Validate_Abstract::getSanitizedValue","1"],[100,1,"Validate\/Choice.php.html#8","CoreExt_Validate_Choice::_getDefaultOptions","1"],[100,6,"Validate\/Choice.php.html#28","CoreExt_Validate_Choice::_validate","6"],[100,3,"Validate\/Choice.php.html#61","CoreExt_Validate_Choice::_getStringArray","3"],[100,1,"Validate\/ChoiceMultiple.php.html#8","CoreExt_Validate_ChoiceMultiple::_getDefaultOptions","1"],[100,1,"Validate\/Numeric.php.html#8","CoreExt_Validate_Numeric::_getDefaultOptions","1"],[100,8,"Validate\/Numeric.php.html#24","CoreExt_Validate_Numeric::_validate","8"],[100,1,"Validate\/String.php.html#8","CoreExt_Validate_String::_getDefaultOptions","1"],[100,5,"Validate\/String.php.html#21","CoreExt_Validate_String::_validate","5"],[100,1,"Validate\/String.php.html#49","CoreExt_Validate_String::_sanitize","1"],[100,1,"View\/Helper\/TableHelper.php.html#14","CoreExt_View_Helper_TableHelper::__construct","1"],[100,1,"View\/Helper\/TableHelper.php.html#21","CoreExt_View_Helper_TableHelper::getInstance","1"],[100,1,"View\/Helper\/TableHelper.php.html#34","CoreExt_View_Helper_TableHelper::resetTable","1"],[100,1,"View\/Helper\/TableHelper.php.html#77","CoreExt_View_Helper_TableHelper::addHeaderRow","1"],[100,1,"View\/Helper\/TableHelper.php.html#92","CoreExt_View_Helper_TableHelper::addBodyRow","1"],[100,1,"View\/Helper\/TableHelper.php.html#107","CoreExt_View_Helper_TableHelper::addFooterRow","1"],[100,1,"View\/Helper\/TableHelper.php.html#120","CoreExt_View_Helper_TableHelper::createTable","1"],[100,1,"View\/Helper\/TableHelper.php.html#139","CoreExt_View_Helper_TableHelper::createHeader","1"],[100,1,"View\/Helper\/TableHelper.php.html#150","CoreExt_View_Helper_TableHelper::createBody","1"],[100,1,"View\/Helper\/TableHelper.php.html#161","CoreExt_View_Helper_TableHelper::createFooter","1"],[100,2,"View\/Helper\/TableHelper.php.html#173","CoreExt_View_Helper_TableHelper::_getTag","2"],[100,8,"View\/Helper\/TableHelper.php.html#188","CoreExt_View_Helper_TableHelper::_createHtml","8"],[100,3,"View\/Helper\/TableHelper.php.html#240","CoreExt_View_Helper_TableHelper::_attributes","3"],[100,1,"View\/Helper\/UrlHelper.php.html#56","CoreExt_View_Helper_UrlHelper::__construct","1"],[100,1,"View\/Helper\/UrlHelper.php.html#63","CoreExt_View_Helper_UrlHelper::getInstance","1"],[100,1,"View\/Helper\/UrlHelper.php.html#73","CoreExt_View_Helper_UrlHelper::setBaseUrl","1"],[100,1,"View\/Helper\/UrlHelper.php.html#119","CoreExt_View_Helper_UrlHelper::url","1"],[100,10,"View\/Helper\/UrlHelper.php.html#132","CoreExt_View_Helper_UrlHelper::_url","10"],[100,1,"View\/Helper\/UrlHelper.php.html#186","CoreExt_View_Helper_UrlHelper::l","1"],[100,1,"View\/Helper\/UrlHelper.php.html#201","CoreExt_View_Helper_UrlHelper::_link","1"]]</script>
+  <script type="text/javascript" defer>
+  const barLabels = [
+    '0%',
+    '0-10%',
+    '10-20%',
+    '20-30%',
+    '30-40%',
+    '40-50%',
+    '50-60%',
+    '60-70%',
+    '70-80%',
+    '80-90%',
+    '90-100%',
+    '100%'
+  ];
+  const barConfig = (name, fullName, values) => ({
+    axis: {
+      x: {
+        type: "category",
+        categories: barLabels,
+      },
+      y: {
+        label: {
+          text: `#${name}`,
+          position: 'outer-top',
+        },
+      },
+    },
+    bindto: `#${name}CoverageDistribution`,
+    data: {
+      columns: [
+        [fullName].concat(values),
+      ],
+      colors: {
+        [fullName]: "rgba(69, 114, 167, 0.75)",
+      },
+      type: "bar",
+    },
+    bar: {
+      width: {
+        ratio: 0.9,
+      },
+    },
+    grid: {
+      focus: {
+        show: false,
+      },
+      x: {
+        show: true,
+      },
+      y: {
+        show: true,
+      },
+    },
+    legend: {
+      show: false,
+    },
+    tooltip: {
+      contents: function (data) {
+        return `<table class="bb-tooltip"><tbody>
+            <tr><th colspan="2">Coverage ${barLabels[data[0].x]}</th></tr>
+            <tr><td class="value">${data[0].value} ${name}</td></tr>
+          </tbody></table>`;
+      },
+      grouped: false,
+    },
+  });
+  bb.generate(
+    barConfig('classes', "Class Coverage", [5,0,0,0,0,0,1,3,1,2,6,18])
+  );
+  bb.generate(
+    barConfig('methods', "Method Coverage", [56,0,0,0,1,1,3,2,2,7,7,178])
+  );
+
+  const scatterConfig = (name, complexityData) => ({
+    axis: {
+      x: {
+        label: {
+          text: 'Code Coverage (in percent)',
+          position: 'outer-right',
+        },
+        tick: {
+          values: [0, 20, 40, 60, 80, 100],
+        },
+      },
+      y: {
+        label: {
+          text: 'Cyclomatic Complexity',
+          position: 'outer-top',
+        },
+        min: 0,
+        padding: {
+          bottom: 0,
+          top: 5,
+        },
+      },
+    },
+    bindto: `#${name}Complexity`,
+    data: {
+      columns: [
+        ["complexity_x"].concat(complexityData.map(d => d[0])),
+        ["complexity"].concat(complexityData.map(d => d[1])),
+      ],
+      onclick: function(data, element) {
+        window.location = complexityData[data.index][2];
+      },
+      type: "scatter",
+      xs: {
+        "complexity": "complexity_x",
+      },
+    },
+    grid: {
+      focus: {
+        show: true,
+        y: true,
+      },
+      x: {
+        show: true,
+      },
+      y: {
+        show: true,
+      },
+    },
+    legend: {
+      show: false,
+    },
+    tooltip: {
+      contents: function (data) {
+        const coverage = Math.round(data[0].x);
+        const complexity = data[0].value;
+        const targetName = complexityData[data[0].index][3];
+        const crap = complexityData[data[0].index][4];
+        return `<table class="bb-tooltip"><tbody>
+            <tr><th colspan="2">${targetName}</th></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Coverage</td><td class="name">${coverage}%</td></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Complexity</td><td class="value">${complexity}</td></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Crap</td><td class="value">${crap}</td></tr>
+          </tbody></table>`;
+      },
+      grouped: false,
+    },
+  });
+  const classComplexityData = JSON.parse(document.getElementById('complexity_class').textContent);
+  bb.generate(
+    scatterConfig("class", classComplexityData)
+  );
+  const methodComplexityData = JSON.parse(document.getElementById('complexity_method').textContent);
+  bb.generate(
+    scatterConfig("method", methodComplexityData),
+  );
+  </script>
+ </body>
+</html>

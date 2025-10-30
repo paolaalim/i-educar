@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/paola/Área de trabalho/i-educar/ieducar/modules/Avaliacao/Views</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../../_css/bootstrap.min.css?v=12.4.0" rel="stylesheet" type="text/css">
+  <link href="../../../../_css/billboard.min.css?v=12.4.0" rel="stylesheet" type="text/css">
+  <link href="../../../../_css/style.css?v=12.4.0" rel="stylesheet" type="text/css">
+  <link href="../../../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../../../index.html">/home/paola/Área de trabalho/i-educar</a></li>
+         <li class="breadcrumb-item"><a href="../../../index.html">ieducar</a></li>
+         <li class="breadcrumb-item"><a href="../../index.html">modules</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">Avaliacao</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Views</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classesCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="DiarioApiController.php.html#19">DiarioApiController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioController.php.html#3">DiarioController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FaltaController.php.html#3">FaltaController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotaController.php.html#3">NotaController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ParecerController.php.html#3">ParecerController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#16">PromocaoApiController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoController.php.html#5">PromocaoController</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+         <th class="text-right">Complexity</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="DiarioApiController.php.html#19">DiarioApiController</a></td><td class="text-right">0.0%</td><td class="text-right">330</td><td class="text-right">109230</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#16">PromocaoApiController</a></td><td class="text-right">0.0%</td><td class="text-right">101</td><td class="text-right">10302</td></tr>
+       <tr><td><a href="NotaController.php.html#3">NotaController</a></td><td class="text-right">0.0%</td><td class="text-right">20</td><td class="text-right">420</td></tr>
+       <tr><td><a href="FaltaController.php.html#3">FaltaController</a></td><td class="text-right">0.0%</td><td class="text-right">19</td><td class="text-right">380</td></tr>
+       <tr><td><a href="ParecerController.php.html#3">ParecerController</a></td><td class="text-right">0.0%</td><td class="text-right">15</td><td class="text-right">240</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2 style="margin-top: 3rem;">Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodsCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="DiarioApiController.php.html#29"><abbr title="DiarioApiController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#35"><abbr title="DiarioApiController::validatesCanChangeDiarioForAno">validatesCanChangeDiarioForAno</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#70"><abbr title="DiarioApiController::validatesRegraAvaliacaoHasNota">validatesRegraAvaliacaoHasNota</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#81"><abbr title="DiarioApiController::validatesRegraAvaliacaoHasFormulaRecuperacao">validatesRegraAvaliacaoHasFormulaRecuperacao</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#93"><abbr title="DiarioApiController::validatesRegraAvaliacaoHasFormulaRecuperacaoWithTypeRecuperacao">validatesRegraAvaliacaoHasFormulaRecuperacaoWithTypeRecuperacao</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#106"><abbr title="DiarioApiController::validatesPreviousNotasHasBeenSet">validatesPreviousNotasHasBeenSet</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#131"><abbr title="DiarioApiController::validatesPreviousFaltasHasBeenSet">validatesPreviousFaltasHasBeenSet</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#151"><abbr title="DiarioApiController::validatesEtapaParecer">validatesEtapaParecer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#175"><abbr title="DiarioApiController::validatesPresenceOfComponenteCurricularIdIfParecerComponente">validatesPresenceOfComponenteCurricularIdIfParecerComponente</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#190"><abbr title="DiarioApiController::validatesRegraAvaliacaoHasParecer">validatesRegraAvaliacaoHasParecer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#204"><abbr title="DiarioApiController::validatesInexistenceOfNotaExame">validatesInexistenceOfNotaExame</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#220"><abbr title="DiarioApiController::validatesInexistenceNotasInNextEtapas">validatesInexistenceNotasInNextEtapas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#248"><abbr title="DiarioApiController::validatesInexistenceFaltasInNextEtapas">validatesInexistenceFaltasInNextEtapas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#272"><abbr title="DiarioApiController::validatesPresenceOfMatriculaIdOrComponenteCurricularId">validatesPresenceOfMatriculaIdOrComponenteCurricularId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#283"><abbr title="DiarioApiController::validatesPeriodoLancamentoFaltasNotas">validatesPeriodoLancamentoFaltasNotas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#309"><abbr title="DiarioApiController::canGetMatriculas">canGetMatriculas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#323"><abbr title="DiarioApiController::canPost">canPost</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#331"><abbr title="DiarioApiController::canPostNota">canPostNota</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#341"><abbr title="DiarioApiController::canPostNotaGeral">canPostNotaGeral</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#346"><abbr title="DiarioApiController::canPostFalta">canPostFalta</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#352"><abbr title="DiarioApiController::canPostParecer">canPostParecer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#361"><abbr title="DiarioApiController::canDelete">canDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#366"><abbr title="DiarioApiController::canDeleteNota">canDeleteNota</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#375"><abbr title="DiarioApiController::canDeleteFalta">canDeleteFalta</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#382"><abbr title="DiarioApiController::canDeleteParecer">canDeleteParecer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#395"><abbr title="DiarioApiController::postNota">postNota</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#445"><abbr title="DiarioApiController::postNotaGeral">postNotaGeral</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#466"><abbr title="DiarioApiController::postMedia">postMedia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#486"><abbr title="DiarioApiController::postMediaDesbloqueia">postMediaDesbloqueia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#499"><abbr title="DiarioApiController::deleteMedia">deleteMedia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#516"><abbr title="DiarioApiController::canPostMedia">canPostMedia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#521"><abbr title="DiarioApiController::canDeleteMedia">canDeleteMedia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#529"><abbr title="DiarioApiController::postNotaRecuperacaoParalela">postNotaRecuperacaoParalela</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#571"><abbr title="DiarioApiController::postNotaRecuperacaoEspecifica">postNotaRecuperacaoEspecifica</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#606"><abbr title="DiarioApiController::postFalta">postFalta</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#631"><abbr title="DiarioApiController::postParecer">postParecer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#656"><abbr title="DiarioApiController::deleteNota">deleteNota</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#677"><abbr title="DiarioApiController::deleteNotaRecuperacaoParalela">deleteNotaRecuperacaoParalela</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#703"><abbr title="DiarioApiController::deleteNotaRecuperacaoEspecifica">deleteNotaRecuperacaoEspecifica</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#729"><abbr title="DiarioApiController::deleteFalta">deleteFalta</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#755"><abbr title="DiarioApiController::deleteParecer">deleteParecer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#783"><abbr title="DiarioApiController::deleteNotaGeral">deleteNotaGeral</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#798"><abbr title="DiarioApiController::getRelocationDate">getRelocationDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#806"><abbr title="DiarioApiController::getMatriculas">getMatriculas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#993"><abbr title="DiarioApiController::parecerGeral">parecerGeral</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1001"><abbr title="DiarioApiController::setCurrentMatriculaId">setCurrentMatriculaId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1006"><abbr title="DiarioApiController::getCurrentMatriculaId">getCurrentMatriculaId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1026"><abbr title="DiarioApiController::serviceBoletim">serviceBoletim</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1057"><abbr title="DiarioApiController::trySaveServiceBoletim">trySaveServiceBoletim</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1067"><abbr title="DiarioApiController::trySaveServiceBoletimFaltas">trySaveServiceBoletimFaltas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1078"><abbr title="DiarioApiController::getQuantidadeFalta">getQuantidadeFalta</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1089"><abbr title="DiarioApiController::getFaltaGeral">getFaltaGeral</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1097"><abbr title="DiarioApiController::getFaltaComponente">getFaltaComponente</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1108"><abbr title="DiarioApiController::getParecerComponente">getParecerComponente</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1117"><abbr title="DiarioApiController::getParecerGeral">getParecerGeral</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1127"><abbr title="DiarioApiController::getSituacaoComponente">getSituacaoComponente</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1147"><abbr title="DiarioApiController::getSituacaoComponentes">getSituacaoComponentes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1167"><abbr title="DiarioApiController::loadComponentesCurricularesForMatricula">loadComponentesCurricularesForMatricula</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1267"><abbr title="DiarioApiController::getAreaConhecimento">getAreaConhecimento</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1296"><abbr title="DiarioApiController::createOrUpdateNotaExame">createOrUpdateNotaExame</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1303"><abbr title="DiarioApiController::deleteNotaExame">deleteNotaExame</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1314"><abbr title="DiarioApiController::getNotaAtual">getNotaAtual</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1335"><abbr title="DiarioApiController::getNotaGeral">getNotaGeral</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1346"><abbr title="DiarioApiController::getMediaAtual">getMediaAtual</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1365"><abbr title="DiarioApiController::getMediaArredondadaAtual">getMediaArredondadaAtual</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1384"><abbr title="DiarioApiController::getMediaBloqueada">getMediaBloqueada</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1401"><abbr title="DiarioApiController::getNotaRecuperacaoParalelaAtual">getNotaRecuperacaoParalelaAtual</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1423"><abbr title="DiarioApiController::shouldShowRecuperacaoEspecifica">shouldShowRecuperacaoEspecifica</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1481"><abbr title="DiarioApiController::getNotaRecuperacaoEspecificaAtual">getNotaRecuperacaoEspecificaAtual</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1503"><abbr title="DiarioApiController::getNotaOriginal">getNotaOriginal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1530"><abbr title="DiarioApiController::getNotaExame">getNotaExame</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1549"><abbr title="DiarioApiController::getNotaNecessariaExame">getNotaNecessariaExame</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1568"><abbr title="DiarioApiController::getFaltaAtual">getFaltaAtual</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1592"><abbr title="DiarioApiController::getEtapaParecer">getEtapaParecer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1601"><abbr title="DiarioApiController::getParecerAtual">getParecerAtual</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1627"><abbr title="DiarioApiController::getRoundingValues">getRoundingValues</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1651"><abbr title="DiarioApiController::getNavegacaoTab">getNavegacaoTab</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1663"><abbr title="DiarioApiController::getEvaluationRule">getEvaluationRule</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1778"><abbr title="DiarioApiController::inserirAuditoriaNotas">inserirAuditoriaNotas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1786"><abbr title="DiarioApiController::usaAuditoriaNotas">usaAuditoriaNotas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1791"><abbr title="DiarioApiController::canChange">canChange</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1800"><abbr title="DiarioApiController::postSituacao">postSituacao</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1821"><abbr title="DiarioApiController::changeRegistrationLockStatus">changeRegistrationLockStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1848"><abbr title="DiarioApiController::canPostSituacaoAndNota">canPostSituacaoAndNota</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1855"><abbr title="DiarioApiController::Gerar">Gerar</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioController.php.html#9"><abbr title="DiarioController::Gerar">Gerar</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DiarioController.php.html#39"><abbr title="DiarioController::_preRender">_preRender</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FaltaController.php.html#50"><abbr title="FaltaController::_preConstruct">_preConstruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FaltaController.php.html#73"><abbr title="FaltaController::_initNovo">_initNovo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FaltaController.php.html#99"><abbr title="FaltaController::_initEditar">_initEditar</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FaltaController.php.html#110"><abbr title="FaltaController::Gerar">Gerar</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FaltaController.php.html#144"><abbr title="FaltaController::_save">_save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotaController.php.html#60"><abbr title="NotaController::_preConstruct">_preConstruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotaController.php.html#83"><abbr title="NotaController::_initNovo">_initNovo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotaController.php.html#106"><abbr title="NotaController::_initEditar">_initEditar</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotaController.php.html#118"><abbr title="NotaController::Gerar">Gerar</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotaController.php.html#163"><abbr title="NotaController::_save">_save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ParecerController.php.html#50"><abbr title="ParecerController::_preConstruct">_preConstruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ParecerController.php.html#73"><abbr title="ParecerController::_initNovo">_initNovo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ParecerController.php.html#94"><abbr title="ParecerController::_initEditar">_initEditar</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ParecerController.php.html#104"><abbr title="ParecerController::Gerar">Gerar</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ParecerController.php.html#134"><abbr title="ParecerController::_save">_save</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#22"><abbr title="PromocaoApiController::canAcceptRequest">canAcceptRequest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#28"><abbr title="PromocaoApiController::canDeleteOldComponentesCurriculares">canDeleteOldComponentesCurriculares</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#33"><abbr title="PromocaoApiController::canPostPromocaoMatricula">canPostPromocaoMatricula</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#39"><abbr title="PromocaoApiController::canGetQuantidadeMatriculas">canGetQuantidadeMatriculas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#45"><abbr title="PromocaoApiController::loadNextMatriculaId">loadNextMatriculaId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#80"><abbr title="PromocaoApiController::loadSituacaoArmazenadaMatricula">loadSituacaoArmazenadaMatricula</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#92"><abbr title="PromocaoApiController::loadComponentesCurriculares">loadComponentesCurriculares</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#100"><abbr title="PromocaoApiController::trySaveBoletimService">trySaveBoletimService</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#111"><abbr title="PromocaoApiController::boletimService">boletimService</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#149"><abbr title="PromocaoApiController::getNota">getNota</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#163"><abbr title="PromocaoApiController::getEtapaParecer">getEtapaParecer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#177"><abbr title="PromocaoApiController::getParecerDescritivo">getParecerDescritivo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#192"><abbr title="PromocaoApiController::lancarFaltasNaoLancadas">lancarFaltasNaoLancadas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#297"><abbr title="PromocaoApiController::matriculaId">matriculaId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#302"><abbr title="PromocaoApiController::setMatriculaId">setMatriculaId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#309"><abbr title="PromocaoApiController::getQuantidadeMatriculas">getQuantidadeMatriculas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#342"><abbr title="PromocaoApiController::postPromocaoMatricula">postPromocaoMatricula</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#389"><abbr title="PromocaoApiController::atualizaNotaExame">atualizaNotaExame</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#405"><abbr title="PromocaoApiController::createOrUpdateNotaExame">createOrUpdateNotaExame</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#412"><abbr title="PromocaoApiController::deleteNotaExame">deleteNotaExame</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#419"><abbr title="PromocaoApiController::Gerar">Gerar</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#439"><abbr title="PromocaoApiController::getInstitutionName">getInstitutionName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#444"><abbr title="PromocaoApiController::getSchoolName">getSchoolName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#459"><abbr title="PromocaoApiController::regraNaoUsaNota">regraNaoUsaNota</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#464"><abbr title="PromocaoApiController::maiorEtapaUtilizada">maiorEtapaUtilizada</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#474"><abbr title="PromocaoApiController::processEnrollmentsPromotion">processEnrollmentsPromotion</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#502"><abbr title="PromocaoApiController::getCourseName">getCourseName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#511"><abbr title="PromocaoApiController::getGradeName">getGradeName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#520"><abbr title="PromocaoApiController::getSchoolClassName">getSchoolClassName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#529"><abbr title="PromocaoApiController::getStudentName">getStudentName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#538"><abbr title="PromocaoApiController::getRegistrationStatus">getRegistrationStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#547"><abbr title="PromocaoApiController::getEvaluationRuleName">getEvaluationRuleName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PromocaoController.php.html#17"><abbr title="PromocaoController::Gerar">Gerar</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+         <th class="text-right">Complexity</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="DiarioApiController.php.html#806"><abbr title="DiarioApiController::getMatriculas">getMatriculas</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">21</td><td class="text-right">462</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1663"><abbr title="DiarioApiController::getEvaluationRule">getEvaluationRule</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">21</td><td class="text-right">462</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1855"><abbr title="DiarioApiController::Gerar">Gerar</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">21</td><td class="text-right">462</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#192"><abbr title="PromocaoApiController::lancarFaltasNaoLancadas">lancarFaltasNaoLancadas</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">19</td><td class="text-right">380</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1423"><abbr title="DiarioApiController::shouldShowRecuperacaoEspecifica">shouldShowRecuperacaoEspecifica</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">11</td><td class="text-right">132</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1167"><abbr title="DiarioApiController::loadComponentesCurricularesForMatricula">loadComponentesCurricularesForMatricula</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">10</td><td class="text-right">110</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#342"><abbr title="PromocaoApiController::postPromocaoMatricula">postPromocaoMatricula</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">9</td><td class="text-right">90</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#35"><abbr title="DiarioApiController::validatesCanChangeDiarioForAno">validatesCanChangeDiarioForAno</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">8</td><td class="text-right">72</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#309"><abbr title="PromocaoApiController::getQuantidadeMatriculas">getQuantidadeMatriculas</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">8</td><td class="text-right">72</td></tr>
+       <tr><td><a href="FaltaController.php.html#144"><abbr title="FaltaController::_save">_save</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">7</td><td class="text-right">56</td></tr>
+       <tr><td><a href="NotaController.php.html#163"><abbr title="NotaController::_save">_save</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">7</td><td class="text-right">56</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#45"><abbr title="PromocaoApiController::loadNextMatriculaId">loadNextMatriculaId</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">7</td><td class="text-right">56</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#111"><abbr title="PromocaoApiController::boletimService">boletimService</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">7</td><td class="text-right">56</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#331"><abbr title="DiarioApiController::canPostNota">canPostNota</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">6</td><td class="text-right">42</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#606"><abbr title="DiarioApiController::postFalta">postFalta</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">6</td><td class="text-right">42</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#729"><abbr title="DiarioApiController::deleteFalta">deleteFalta</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">6</td><td class="text-right">42</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#755"><abbr title="DiarioApiController::deleteParecer">deleteParecer</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">6</td><td class="text-right">42</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1026"><abbr title="DiarioApiController::serviceBoletim">serviceBoletim</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">6</td><td class="text-right">42</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1568"><abbr title="DiarioApiController::getFaltaAtual">getFaltaAtual</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">6</td><td class="text-right">42</td></tr>
+       <tr><td><a href="NotaController.php.html#118"><abbr title="NotaController::Gerar">Gerar</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">6</td><td class="text-right">42</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#151"><abbr title="DiarioApiController::validatesEtapaParecer">validatesEtapaParecer</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">5</td><td class="text-right">30</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#220"><abbr title="DiarioApiController::validatesInexistenceNotasInNextEtapas">validatesInexistenceNotasInNextEtapas</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">5</td><td class="text-right">30</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#248"><abbr title="DiarioApiController::validatesInexistenceFaltasInNextEtapas">validatesInexistenceFaltasInNextEtapas</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">5</td><td class="text-right">30</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#352"><abbr title="DiarioApiController::canPostParecer">canPostParecer</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">5</td><td class="text-right">30</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#366"><abbr title="DiarioApiController::canDeleteNota">canDeleteNota</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">5</td><td class="text-right">30</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#395"><abbr title="DiarioApiController::postNota">postNota</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">5</td><td class="text-right">30</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#529"><abbr title="DiarioApiController::postNotaRecuperacaoParalela">postNotaRecuperacaoParalela</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">5</td><td class="text-right">30</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1503"><abbr title="DiarioApiController::getNotaOriginal">getNotaOriginal</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">5</td><td class="text-right">30</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1601"><abbr title="DiarioApiController::getParecerAtual">getParecerAtual</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">5</td><td class="text-right">30</td></tr>
+       <tr><td><a href="FaltaController.php.html#73"><abbr title="FaltaController::_initNovo">_initNovo</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">5</td><td class="text-right">30</td></tr>
+       <tr><td><a href="FaltaController.php.html#110"><abbr title="FaltaController::Gerar">Gerar</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">5</td><td class="text-right">30</td></tr>
+       <tr><td><a href="NotaController.php.html#83"><abbr title="NotaController::_initNovo">_initNovo</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">5</td><td class="text-right">30</td></tr>
+       <tr><td><a href="ParecerController.php.html#73"><abbr title="ParecerController::_initNovo">_initNovo</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">5</td><td class="text-right">30</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#283"><abbr title="DiarioApiController::validatesPeriodoLancamentoFaltasNotas">validatesPeriodoLancamentoFaltasNotas</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#323"><abbr title="DiarioApiController::canPost">canPost</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#499"><abbr title="DiarioApiController::deleteMedia">deleteMedia</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#571"><abbr title="DiarioApiController::postNotaRecuperacaoEspecifica">postNotaRecuperacaoEspecifica</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#631"><abbr title="DiarioApiController::postParecer">postParecer</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#656"><abbr title="DiarioApiController::deleteNota">deleteNota</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1127"><abbr title="DiarioApiController::getSituacaoComponente">getSituacaoComponente</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1147"><abbr title="DiarioApiController::getSituacaoComponentes">getSituacaoComponentes</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1314"><abbr title="DiarioApiController::getNotaAtual">getNotaAtual</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1401"><abbr title="DiarioApiController::getNotaRecuperacaoParalelaAtual">getNotaRecuperacaoParalelaAtual</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1481"><abbr title="DiarioApiController::getNotaRecuperacaoEspecificaAtual">getNotaRecuperacaoEspecificaAtual</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1530"><abbr title="DiarioApiController::getNotaExame">getNotaExame</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1592"><abbr title="DiarioApiController::getEtapaParecer">getEtapaParecer</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1627"><abbr title="DiarioApiController::getRoundingValues">getRoundingValues</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1800"><abbr title="DiarioApiController::postSituacao">postSituacao</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1821"><abbr title="DiarioApiController::changeRegistrationLockStatus">changeRegistrationLockStatus</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="ParecerController.php.html#104"><abbr title="ParecerController::Gerar">Gerar</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="ParecerController.php.html#134"><abbr title="ParecerController::_save">_save</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#163"><abbr title="PromocaoApiController::getEtapaParecer">getEtapaParecer</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#81"><abbr title="DiarioApiController::validatesRegraAvaliacaoHasFormulaRecuperacao">validatesRegraAvaliacaoHasFormulaRecuperacao</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#93"><abbr title="DiarioApiController::validatesRegraAvaliacaoHasFormulaRecuperacaoWithTypeRecuperacao">validatesRegraAvaliacaoHasFormulaRecuperacaoWithTypeRecuperacao</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#106"><abbr title="DiarioApiController::validatesPreviousNotasHasBeenSet">validatesPreviousNotasHasBeenSet</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#204"><abbr title="DiarioApiController::validatesInexistenceOfNotaExame">validatesInexistenceOfNotaExame</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#272"><abbr title="DiarioApiController::validatesPresenceOfMatriculaIdOrComponenteCurricularId">validatesPresenceOfMatriculaIdOrComponenteCurricularId</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#309"><abbr title="DiarioApiController::canGetMatriculas">canGetMatriculas</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#375"><abbr title="DiarioApiController::canDeleteFalta">canDeleteFalta</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#382"><abbr title="DiarioApiController::canDeleteParecer">canDeleteParecer</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#486"><abbr title="DiarioApiController::postMediaDesbloqueia">postMediaDesbloqueia</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1006"><abbr title="DiarioApiController::getCurrentMatriculaId">getCurrentMatriculaId</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1267"><abbr title="DiarioApiController::getAreaConhecimento">getAreaConhecimento</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1346"><abbr title="DiarioApiController::getMediaAtual">getMediaAtual</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1365"><abbr title="DiarioApiController::getMediaArredondadaAtual">getMediaArredondadaAtual</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1384"><abbr title="DiarioApiController::getMediaBloqueada">getMediaBloqueada</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1549"><abbr title="DiarioApiController::getNotaNecessariaExame">getNotaNecessariaExame</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#177"><abbr title="PromocaoApiController::getParecerDescritivo">getParecerDescritivo</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#389"><abbr title="PromocaoApiController::atualizaNotaExame">atualizaNotaExame</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#419"><abbr title="PromocaoApiController::Gerar">Gerar</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#70"><abbr title="DiarioApiController::validatesRegraAvaliacaoHasNota">validatesRegraAvaliacaoHasNota</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#131"><abbr title="DiarioApiController::validatesPreviousFaltasHasBeenSet">validatesPreviousFaltasHasBeenSet</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#175"><abbr title="DiarioApiController::validatesPresenceOfComponenteCurricularIdIfParecerComponente">validatesPresenceOfComponenteCurricularIdIfParecerComponente</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#190"><abbr title="DiarioApiController::validatesRegraAvaliacaoHasParecer">validatesRegraAvaliacaoHasParecer</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#346"><abbr title="DiarioApiController::canPostFalta">canPostFalta</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#445"><abbr title="DiarioApiController::postNotaGeral">postNotaGeral</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#466"><abbr title="DiarioApiController::postMedia">postMedia</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#677"><abbr title="DiarioApiController::deleteNotaRecuperacaoParalela">deleteNotaRecuperacaoParalela</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#703"><abbr title="DiarioApiController::deleteNotaRecuperacaoEspecifica">deleteNotaRecuperacaoEspecifica</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1057"><abbr title="DiarioApiController::trySaveServiceBoletim">trySaveServiceBoletim</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1067"><abbr title="DiarioApiController::trySaveServiceBoletimFaltas">trySaveServiceBoletimFaltas</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1078"><abbr title="DiarioApiController::getQuantidadeFalta">getQuantidadeFalta</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1296"><abbr title="DiarioApiController::createOrUpdateNotaExame">createOrUpdateNotaExame</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1335"><abbr title="DiarioApiController::getNotaGeral">getNotaGeral</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="DiarioApiController.php.html#1778"><abbr title="DiarioApiController::inserirAuditoriaNotas">inserirAuditoriaNotas</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#22"><abbr title="PromocaoApiController::canAcceptRequest">canAcceptRequest</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#33"><abbr title="PromocaoApiController::canPostPromocaoMatricula">canPostPromocaoMatricula</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#39"><abbr title="PromocaoApiController::canGetQuantidadeMatriculas">canGetQuantidadeMatriculas</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#100"><abbr title="PromocaoApiController::trySaveBoletimService">trySaveBoletimService</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#149"><abbr title="PromocaoApiController::getNota">getNota</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#297"><abbr title="PromocaoApiController::matriculaId">matriculaId</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#405"><abbr title="PromocaoApiController::createOrUpdateNotaExame">createOrUpdateNotaExame</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#444"><abbr title="PromocaoApiController::getSchoolName">getSchoolName</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#474"><abbr title="PromocaoApiController::processEnrollmentsPromotion">processEnrollmentsPromotion</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#502"><abbr title="PromocaoApiController::getCourseName">getCourseName</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#511"><abbr title="PromocaoApiController::getGradeName">getGradeName</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#520"><abbr title="PromocaoApiController::getSchoolClassName">getSchoolClassName</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#529"><abbr title="PromocaoApiController::getStudentName">getStudentName</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#538"><abbr title="PromocaoApiController::getRegistrationStatus">getRegistrationStatus</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="PromocaoApiController.php.html#547"><abbr title="PromocaoApiController::getEvaluationRuleName">getEvaluationRuleName</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 12.4.0</a> using <a href="https://www.php.net/" target="_top">PHP 8.3.6</a> and <a href="https://phpunit.de/">PHPUnit 12.3.8</a> at Thu Oct 30 8:17:42 -03 2025.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../../../_js/billboard.pkgd.min.js?v=12.4.0" type="text/javascript"></script>
+  <script type="application/json" id="complexity_class">[[0,330,"DiarioApiController.php.html#19","DiarioApiController","109230"],[0,2,"DiarioController.php.html#3","DiarioController","6"],[0,19,"FaltaController.php.html#3","FaltaController","380"],[0,20,"NotaController.php.html#3","NotaController","420"],[0,15,"ParecerController.php.html#3","ParecerController","240"],[0,101,"PromocaoApiController.php.html#16","PromocaoApiController","10302"],[0,1,"PromocaoController.php.html#5","PromocaoController","2"]]</script>
+  <script type="application/json" id="complexity_method">[[0,1,"DiarioApiController.php.html#29","DiarioApiController::__construct","2"],[0,8,"DiarioApiController.php.html#35","DiarioApiController::validatesCanChangeDiarioForAno","72"],[0,2,"DiarioApiController.php.html#70","DiarioApiController::validatesRegraAvaliacaoHasNota","6"],[0,3,"DiarioApiController.php.html#81","DiarioApiController::validatesRegraAvaliacaoHasFormulaRecuperacao","12"],[0,3,"DiarioApiController.php.html#93","DiarioApiController::validatesRegraAvaliacaoHasFormulaRecuperacaoWithTypeRecuperacao","12"],[0,3,"DiarioApiController.php.html#106","DiarioApiController::validatesPreviousNotasHasBeenSet","12"],[0,2,"DiarioApiController.php.html#131","DiarioApiController::validatesPreviousFaltasHasBeenSet","6"],[0,5,"DiarioApiController.php.html#151","DiarioApiController::validatesEtapaParecer","30"],[0,2,"DiarioApiController.php.html#175","DiarioApiController::validatesPresenceOfComponenteCurricularIdIfParecerComponente","6"],[0,2,"DiarioApiController.php.html#190","DiarioApiController::validatesRegraAvaliacaoHasParecer","6"],[0,3,"DiarioApiController.php.html#204","DiarioApiController::validatesInexistenceOfNotaExame","12"],[0,5,"DiarioApiController.php.html#220","DiarioApiController::validatesInexistenceNotasInNextEtapas","30"],[0,5,"DiarioApiController.php.html#248","DiarioApiController::validatesInexistenceFaltasInNextEtapas","30"],[0,3,"DiarioApiController.php.html#272","DiarioApiController::validatesPresenceOfMatriculaIdOrComponenteCurricularId","12"],[0,4,"DiarioApiController.php.html#283","DiarioApiController::validatesPeriodoLancamentoFaltasNotas","20"],[0,3,"DiarioApiController.php.html#309","DiarioApiController::canGetMatriculas","12"],[0,4,"DiarioApiController.php.html#323","DiarioApiController::canPost","20"],[0,6,"DiarioApiController.php.html#331","DiarioApiController::canPostNota","42"],[0,1,"DiarioApiController.php.html#341","DiarioApiController::canPostNotaGeral","2"],[0,2,"DiarioApiController.php.html#346","DiarioApiController::canPostFalta","6"],[0,5,"DiarioApiController.php.html#352","DiarioApiController::canPostParecer","30"],[0,1,"DiarioApiController.php.html#361","DiarioApiController::canDelete","2"],[0,5,"DiarioApiController.php.html#366","DiarioApiController::canDeleteNota","30"],[0,3,"DiarioApiController.php.html#375","DiarioApiController::canDeleteFalta","12"],[0,3,"DiarioApiController.php.html#382","DiarioApiController::canDeleteParecer","12"],[0,5,"DiarioApiController.php.html#395","DiarioApiController::postNota","30"],[0,2,"DiarioApiController.php.html#445","DiarioApiController::postNotaGeral","6"],[0,2,"DiarioApiController.php.html#466","DiarioApiController::postMedia","6"],[0,3,"DiarioApiController.php.html#486","DiarioApiController::postMediaDesbloqueia","12"],[0,4,"DiarioApiController.php.html#499","DiarioApiController::deleteMedia","20"],[0,1,"DiarioApiController.php.html#516","DiarioApiController::canPostMedia","2"],[0,1,"DiarioApiController.php.html#521","DiarioApiController::canDeleteMedia","2"],[0,5,"DiarioApiController.php.html#529","DiarioApiController::postNotaRecuperacaoParalela","30"],[0,4,"DiarioApiController.php.html#571","DiarioApiController::postNotaRecuperacaoEspecifica","20"],[0,6,"DiarioApiController.php.html#606","DiarioApiController::postFalta","42"],[0,4,"DiarioApiController.php.html#631","DiarioApiController::postParecer","20"],[0,4,"DiarioApiController.php.html#656","DiarioApiController::deleteNota","20"],[0,2,"DiarioApiController.php.html#677","DiarioApiController::deleteNotaRecuperacaoParalela","6"],[0,2,"DiarioApiController.php.html#703","DiarioApiController::deleteNotaRecuperacaoEspecifica","6"],[0,6,"DiarioApiController.php.html#729","DiarioApiController::deleteFalta","42"],[0,6,"DiarioApiController.php.html#755","DiarioApiController::deleteParecer","42"],[0,1,"DiarioApiController.php.html#783","DiarioApiController::deleteNotaGeral","2"],[0,1,"DiarioApiController.php.html#798","DiarioApiController::getRelocationDate","2"],[0,21,"DiarioApiController.php.html#806","DiarioApiController::getMatriculas","462"],[0,1,"DiarioApiController.php.html#993","DiarioApiController::parecerGeral","2"],[0,1,"DiarioApiController.php.html#1001","DiarioApiController::setCurrentMatriculaId","2"],[0,3,"DiarioApiController.php.html#1006","DiarioApiController::getCurrentMatriculaId","12"],[0,6,"DiarioApiController.php.html#1026","DiarioApiController::serviceBoletim","42"],[0,2,"DiarioApiController.php.html#1057","DiarioApiController::trySaveServiceBoletim","6"],[0,2,"DiarioApiController.php.html#1067","DiarioApiController::trySaveServiceBoletimFaltas","6"],[0,2,"DiarioApiController.php.html#1078","DiarioApiController::getQuantidadeFalta","6"],[0,1,"DiarioApiController.php.html#1089","DiarioApiController::getFaltaGeral","2"],[0,1,"DiarioApiController.php.html#1097","DiarioApiController::getFaltaComponente","2"],[0,1,"DiarioApiController.php.html#1108","DiarioApiController::getParecerComponente","2"],[0,1,"DiarioApiController.php.html#1117","DiarioApiController::getParecerGeral","2"],[0,4,"DiarioApiController.php.html#1127","DiarioApiController::getSituacaoComponente","20"],[0,4,"DiarioApiController.php.html#1147","DiarioApiController::getSituacaoComponentes","20"],[0,10,"DiarioApiController.php.html#1167","DiarioApiController::loadComponentesCurricularesForMatricula","110"],[0,3,"DiarioApiController.php.html#1267","DiarioApiController::getAreaConhecimento","12"],[0,2,"DiarioApiController.php.html#1296","DiarioApiController::createOrUpdateNotaExame","6"],[0,1,"DiarioApiController.php.html#1303","DiarioApiController::deleteNotaExame","2"],[0,4,"DiarioApiController.php.html#1314","DiarioApiController::getNotaAtual","20"],[0,2,"DiarioApiController.php.html#1335","DiarioApiController::getNotaGeral","6"],[0,3,"DiarioApiController.php.html#1346","DiarioApiController::getMediaAtual","12"],[0,3,"DiarioApiController.php.html#1365","DiarioApiController::getMediaArredondadaAtual","12"],[0,3,"DiarioApiController.php.html#1384","DiarioApiController::getMediaBloqueada","12"],[0,4,"DiarioApiController.php.html#1401","DiarioApiController::getNotaRecuperacaoParalelaAtual","20"],[0,11,"DiarioApiController.php.html#1423","DiarioApiController::shouldShowRecuperacaoEspecifica","132"],[0,4,"DiarioApiController.php.html#1481","DiarioApiController::getNotaRecuperacaoEspecificaAtual","20"],[0,5,"DiarioApiController.php.html#1503","DiarioApiController::getNotaOriginal","30"],[0,4,"DiarioApiController.php.html#1530","DiarioApiController::getNotaExame","20"],[0,3,"DiarioApiController.php.html#1549","DiarioApiController::getNotaNecessariaExame","12"],[0,6,"DiarioApiController.php.html#1568","DiarioApiController::getFaltaAtual","42"],[0,4,"DiarioApiController.php.html#1592","DiarioApiController::getEtapaParecer","20"],[0,5,"DiarioApiController.php.html#1601","DiarioApiController::getParecerAtual","30"],[0,4,"DiarioApiController.php.html#1627","DiarioApiController::getRoundingValues","20"],[0,1,"DiarioApiController.php.html#1651","DiarioApiController::getNavegacaoTab","2"],[0,21,"DiarioApiController.php.html#1663","DiarioApiController::getEvaluationRule","462"],[0,2,"DiarioApiController.php.html#1778","DiarioApiController::inserirAuditoriaNotas","6"],[0,1,"DiarioApiController.php.html#1786","DiarioApiController::usaAuditoriaNotas","2"],[0,1,"DiarioApiController.php.html#1791","DiarioApiController::canChange","2"],[0,4,"DiarioApiController.php.html#1800","DiarioApiController::postSituacao","20"],[0,4,"DiarioApiController.php.html#1821","DiarioApiController::changeRegistrationLockStatus","20"],[0,1,"DiarioApiController.php.html#1848","DiarioApiController::canPostSituacaoAndNota","2"],[0,21,"DiarioApiController.php.html#1855","DiarioApiController::Gerar","462"],[0,1,"DiarioController.php.html#9","DiarioController::Gerar","2"],[0,1,"DiarioController.php.html#39","DiarioController::_preRender","2"],[0,1,"FaltaController.php.html#50","FaltaController::_preConstruct","2"],[0,5,"FaltaController.php.html#73","FaltaController::_initNovo","30"],[0,1,"FaltaController.php.html#99","FaltaController::_initEditar","2"],[0,5,"FaltaController.php.html#110","FaltaController::Gerar","30"],[0,7,"FaltaController.php.html#144","FaltaController::_save","56"],[0,1,"NotaController.php.html#60","NotaController::_preConstruct","2"],[0,5,"NotaController.php.html#83","NotaController::_initNovo","30"],[0,1,"NotaController.php.html#106","NotaController::_initEditar","2"],[0,6,"NotaController.php.html#118","NotaController::Gerar","42"],[0,7,"NotaController.php.html#163","NotaController::_save","56"],[0,1,"ParecerController.php.html#50","ParecerController::_preConstruct","2"],[0,5,"ParecerController.php.html#73","ParecerController::_initNovo","30"],[0,1,"ParecerController.php.html#94","ParecerController::_initEditar","2"],[0,4,"ParecerController.php.html#104","ParecerController::Gerar","20"],[0,4,"ParecerController.php.html#134","ParecerController::_save","20"],[0,2,"PromocaoApiController.php.html#22","PromocaoApiController::canAcceptRequest","6"],[0,1,"PromocaoApiController.php.html#28","PromocaoApiController::canDeleteOldComponentesCurriculares","2"],[0,2,"PromocaoApiController.php.html#33","PromocaoApiController::canPostPromocaoMatricula","6"],[0,2,"PromocaoApiController.php.html#39","PromocaoApiController::canGetQuantidadeMatriculas","6"],[0,7,"PromocaoApiController.php.html#45","PromocaoApiController::loadNextMatriculaId","56"],[0,1,"PromocaoApiController.php.html#80","PromocaoApiController::loadSituacaoArmazenadaMatricula","2"],[0,1,"PromocaoApiController.php.html#92","PromocaoApiController::loadComponentesCurriculares","2"],[0,2,"PromocaoApiController.php.html#100","PromocaoApiController::trySaveBoletimService","6"],[0,7,"PromocaoApiController.php.html#111","PromocaoApiController::boletimService","56"],[0,2,"PromocaoApiController.php.html#149","PromocaoApiController::getNota","6"],[0,4,"PromocaoApiController.php.html#163","PromocaoApiController::getEtapaParecer","20"],[0,3,"PromocaoApiController.php.html#177","PromocaoApiController::getParecerDescritivo","12"],[0,19,"PromocaoApiController.php.html#192","PromocaoApiController::lancarFaltasNaoLancadas","380"],[0,2,"PromocaoApiController.php.html#297","PromocaoApiController::matriculaId","6"],[0,1,"PromocaoApiController.php.html#302","PromocaoApiController::setMatriculaId","2"],[0,8,"PromocaoApiController.php.html#309","PromocaoApiController::getQuantidadeMatriculas","72"],[0,9,"PromocaoApiController.php.html#342","PromocaoApiController::postPromocaoMatricula","90"],[0,3,"PromocaoApiController.php.html#389","PromocaoApiController::atualizaNotaExame","12"],[0,2,"PromocaoApiController.php.html#405","PromocaoApiController::createOrUpdateNotaExame","6"],[0,1,"PromocaoApiController.php.html#412","PromocaoApiController::deleteNotaExame","2"],[0,3,"PromocaoApiController.php.html#419","PromocaoApiController::Gerar","12"],[0,1,"PromocaoApiController.php.html#439","PromocaoApiController::getInstitutionName","2"],[0,2,"PromocaoApiController.php.html#444","PromocaoApiController::getSchoolName","6"],[0,1,"PromocaoApiController.php.html#459","PromocaoApiController::regraNaoUsaNota","2"],[0,1,"PromocaoApiController.php.html#464","PromocaoApiController::maiorEtapaUtilizada","2"],[0,2,"PromocaoApiController.php.html#474","PromocaoApiController::processEnrollmentsPromotion","6"],[0,2,"PromocaoApiController.php.html#502","PromocaoApiController::getCourseName","6"],[0,2,"PromocaoApiController.php.html#511","PromocaoApiController::getGradeName","6"],[0,2,"PromocaoApiController.php.html#520","PromocaoApiController::getSchoolClassName","6"],[0,2,"PromocaoApiController.php.html#529","PromocaoApiController::getStudentName","6"],[0,2,"PromocaoApiController.php.html#538","PromocaoApiController::getRegistrationStatus","6"],[0,2,"PromocaoApiController.php.html#547","PromocaoApiController::getEvaluationRuleName","6"],[0,1,"PromocaoController.php.html#17","PromocaoController::Gerar","2"]]</script>
+  <script type="text/javascript" defer>
+  const barLabels = [
+    '0%',
+    '0-10%',
+    '10-20%',
+    '20-30%',
+    '30-40%',
+    '40-50%',
+    '50-60%',
+    '60-70%',
+    '70-80%',
+    '80-90%',
+    '90-100%',
+    '100%'
+  ];
+  const barConfig = (name, fullName, values) => ({
+    axis: {
+      x: {
+        type: "category",
+        categories: barLabels,
+      },
+      y: {
+        label: {
+          text: `#${name}`,
+          position: 'outer-top',
+        },
+      },
+    },
+    bindto: `#${name}CoverageDistribution`,
+    data: {
+      columns: [
+        [fullName].concat(values),
+      ],
+      colors: {
+        [fullName]: "rgba(69, 114, 167, 0.75)",
+      },
+      type: "bar",
+    },
+    bar: {
+      width: {
+        ratio: 0.9,
+      },
+    },
+    grid: {
+      focus: {
+        show: false,
+      },
+      x: {
+        show: true,
+      },
+      y: {
+        show: true,
+      },
+    },
+    legend: {
+      show: false,
+    },
+    tooltip: {
+      contents: function (data) {
+        return `<table class="bb-tooltip"><tbody>
+            <tr><th colspan="2">Coverage ${barLabels[data[0].x]}</th></tr>
+            <tr><td class="value">${data[0].value} ${name}</td></tr>
+          </tbody></table>`;
+      },
+      grouped: false,
+    },
+  });
+  bb.generate(
+    barConfig('classes', "Class Coverage", [7,0,0,0,0,0,0,0,0,0,0,0])
+  );
+  bb.generate(
+    barConfig('methods', "Method Coverage", [135,0,0,0,0,0,0,0,0,0,0,0])
+  );
+
+  const scatterConfig = (name, complexityData) => ({
+    axis: {
+      x: {
+        label: {
+          text: 'Code Coverage (in percent)',
+          position: 'outer-right',
+        },
+        tick: {
+          values: [0, 20, 40, 60, 80, 100],
+        },
+      },
+      y: {
+        label: {
+          text: 'Cyclomatic Complexity',
+          position: 'outer-top',
+        },
+        min: 0,
+        padding: {
+          bottom: 0,
+          top: 5,
+        },
+      },
+    },
+    bindto: `#${name}Complexity`,
+    data: {
+      columns: [
+        ["complexity_x"].concat(complexityData.map(d => d[0])),
+        ["complexity"].concat(complexityData.map(d => d[1])),
+      ],
+      onclick: function(data, element) {
+        window.location = complexityData[data.index][2];
+      },
+      type: "scatter",
+      xs: {
+        "complexity": "complexity_x",
+      },
+    },
+    grid: {
+      focus: {
+        show: true,
+        y: true,
+      },
+      x: {
+        show: true,
+      },
+      y: {
+        show: true,
+      },
+    },
+    legend: {
+      show: false,
+    },
+    tooltip: {
+      contents: function (data) {
+        const coverage = Math.round(data[0].x);
+        const complexity = data[0].value;
+        const targetName = complexityData[data[0].index][3];
+        const crap = complexityData[data[0].index][4];
+        return `<table class="bb-tooltip"><tbody>
+            <tr><th colspan="2">${targetName}</th></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Coverage</td><td class="name">${coverage}%</td></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Complexity</td><td class="value">${complexity}</td></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Crap</td><td class="value">${crap}</td></tr>
+          </tbody></table>`;
+      },
+      grouped: false,
+    },
+  });
+  const classComplexityData = JSON.parse(document.getElementById('complexity_class').textContent);
+  bb.generate(
+    scatterConfig("class", classComplexityData)
+  );
+  const methodComplexityData = JSON.parse(document.getElementById('complexity_method').textContent);
+  bb.generate(
+    scatterConfig("method", methodComplexityData),
+  );
+  </script>
+ </body>
+</html>

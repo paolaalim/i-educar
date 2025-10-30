@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/paola/Área de trabalho/i-educar/ieducar/modules/Avaliacao/Service/Boletim</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../../../_css/bootstrap.min.css?v=12.4.0" rel="stylesheet" type="text/css">
+  <link href="../../../../../_css/billboard.min.css?v=12.4.0" rel="stylesheet" type="text/css">
+  <link href="../../../../../_css/style.css?v=12.4.0" rel="stylesheet" type="text/css">
+  <link href="../../../../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../../../../index.html">/home/paola/Área de trabalho/i-educar</a></li>
+         <li class="breadcrumb-item"><a href="../../../../index.html">ieducar</a></li>
+         <li class="breadcrumb-item"><a href="../../../index.html">modules</a></li>
+         <li class="breadcrumb-item"><a href="../../index.html">Avaliacao</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">Service</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Boletim</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classesCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Avaliacao.php.html#3">Avaliacao_Service_Boletim_Avaliacao</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FaltaAluno.php.html#3">Avaliacao_Service_Boletim_FaltaAluno</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotaAluno.php.html#3">Avaliacao_Service_Boletim_NotaAluno</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ParecerDescritivoAluno.php.html#3">Avaliacao_Service_Boletim_ParecerDescritivoAluno</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#3">Avaliacao_Service_Boletim_RegraAvaliacao</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Validators.php.html#3">Avaliacao_Service_Boletim_Validators</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#3">Avaliacao_Service_Boletim_Acessores</a></td><td class="text-right">45%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+         <th class="text-right">Complexity</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="RegraAvaliacao.php.html#3">Avaliacao_Service_Boletim_RegraAvaliacao</a></td><td class="text-right">0.0%</td><td class="text-right">33</td><td class="text-right">1122</td></tr>
+       <tr><td><a href="Acessores.php.html#3">Avaliacao_Service_Boletim_Acessores</a></td><td class="text-right">45.6%</td><td class="text-right">74</td><td class="text-right">956</td></tr>
+       <tr><td><a href="FaltaAluno.php.html#3">Avaliacao_Service_Boletim_FaltaAluno</a></td><td class="text-right">0.0%</td><td class="text-right">5</td><td class="text-right">30</td></tr>
+       <tr><td><a href="NotaAluno.php.html#3">Avaliacao_Service_Boletim_NotaAluno</a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="ParecerDescritivoAluno.php.html#3">Avaliacao_Service_Boletim_ParecerDescritivoAluno</a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2 style="margin-top: 3rem;">Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodsCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Acessores.php.html#238"><abbr title="Avaliacao_Service_Boletim_Acessores::setOption">setOption</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#248"><abbr title="Avaliacao_Service_Boletim_Acessores::getComponenteDataMapper">getComponenteDataMapper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#270"><abbr title="Avaliacao_Service_Boletim_Acessores::getComponenteTurmaDataMapper">getComponenteTurmaDataMapper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#292"><abbr title="Avaliacao_Service_Boletim_Acessores::getRegraDataMapper">getRegraDataMapper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#314"><abbr title="Avaliacao_Service_Boletim_Acessores::getNotaAlunoDataMapper">getNotaAlunoDataMapper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#336"><abbr title="Avaliacao_Service_Boletim_Acessores::getNotaComponenteDataMapper">getNotaComponenteDataMapper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#358"><abbr title="Avaliacao_Service_Boletim_Acessores::getNotaComponenteMediaDataMapper">getNotaComponenteMediaDataMapper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#380"><abbr title="Avaliacao_Service_Boletim_Acessores::getFaltaAlunoDataMapper">getFaltaAlunoDataMapper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#402"><abbr title="Avaliacao_Service_Boletim_Acessores::getFaltaAbstractDataMapper">getFaltaAbstractDataMapper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#432"><abbr title="Avaliacao_Service_Boletim_Acessores::getParecerDescritivoAlunoDataMapper">getParecerDescritivoAlunoDataMapper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#454"><abbr title="Avaliacao_Service_Boletim_Acessores::getParecerDescritivoAbstractDataMapper">getParecerDescritivoAbstractDataMapper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#484"><abbr title="Avaliacao_Service_Boletim_Acessores::getNotaGeralAbstractDataMapper">getNotaGeralAbstractDataMapper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#495"><abbr title="Avaliacao_Service_Boletim_Acessores::setNotaGeralAbstractDataMapper">setNotaGeralAbstractDataMapper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#505"><abbr title="Avaliacao_Service_Boletim_Acessores::getNotaGeralDataMapper">getNotaGeralDataMapper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#517"><abbr title="Avaliacao_Service_Boletim_Acessores::setNotaGeralDataMapper">setNotaGeralDataMapper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#527"><abbr title="Avaliacao_Service_Boletim_Acessores::getMediaGeralDataMapper">getMediaGeralDataMapper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#539"><abbr title="Avaliacao_Service_Boletim_Acessores::setMediaGeralDataMapper">setMediaGeralDataMapper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#549"><abbr title="Avaliacao_Service_Boletim_Acessores::getComponenteCurricularId">getComponenteCurricularId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#558"><abbr title="Avaliacao_Service_Boletim_Acessores::setComponenteCurricularId">setComponenteCurricularId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#568"><abbr title="Avaliacao_Service_Boletim_Acessores::getCurrentComponenteCurricular">getCurrentComponenteCurricular</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#577"><abbr title="Avaliacao_Service_Boletim_Acessores::setCurrentComponenteCurricular">setCurrentComponenteCurricular</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#587"><abbr title="Avaliacao_Service_Boletim_Acessores::getComponentes">getComponentes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#595"><abbr title="Avaliacao_Service_Boletim_Acessores::_setComponentes">_setComponentes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#602"><abbr title="Avaliacao_Service_Boletim_Acessores::isUpdateScore">isUpdateScore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#607"><abbr title="Avaliacao_Service_Boletim_Acessores::setUpdateScore">setUpdateScore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#101"><abbr title="Avaliacao_Service_Boletim_Avaliacao::getNotasComponentes">getNotasComponentes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#109"><abbr title="Avaliacao_Service_Boletim_Avaliacao::setNotasComponentes">setNotasComponentes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#119"><abbr title="Avaliacao_Service_Boletim_Avaliacao::getNotasGerais">getNotasGerais</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#127"><abbr title="Avaliacao_Service_Boletim_Avaliacao::setNotasGerais">setNotasGerais</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#139"><abbr title="Avaliacao_Service_Boletim_Avaliacao::getMediasComponentes">getMediasComponentes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#150"><abbr title="Avaliacao_Service_Boletim_Avaliacao::setMediasComponentes">setMediasComponentes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#162"><abbr title="Avaliacao_Service_Boletim_Avaliacao::getMediaGeral">getMediaGeral</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#173"><abbr title="Avaliacao_Service_Boletim_Avaliacao::setMediaGeral">setMediaGeral</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#180"><abbr title="Avaliacao_Service_Boletim_Avaliacao::addNotaItem">addNotaItem</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#190"><abbr title="Avaliacao_Service_Boletim_Avaliacao::getNotas">getNotas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#200"><abbr title="Avaliacao_Service_Boletim_Avaliacao::getFaltasComponentes">getFaltasComponentes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#208"><abbr title="Avaliacao_Service_Boletim_Avaliacao::setFaltasComponentes">setFaltasComponentes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#220"><abbr title="Avaliacao_Service_Boletim_Avaliacao::getFaltasGerais">getFaltasGerais</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#228"><abbr title="Avaliacao_Service_Boletim_Avaliacao::setFaltasGerais">setFaltasGerais</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#235"><abbr title="Avaliacao_Service_Boletim_Avaliacao::addFaltaKey">addFaltaKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#245"><abbr title="Avaliacao_Service_Boletim_Avaliacao::getFaltas">getFaltas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#250"><abbr title="Avaliacao_Service_Boletim_Avaliacao::addParecerKey">addParecerKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#263"><abbr title="Avaliacao_Service_Boletim_Avaliacao::getPareceres">getPareceres</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#274"><abbr title="Avaliacao_Service_Boletim_Avaliacao::getPareceresComponentes">getPareceresComponentes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#282"><abbr title="Avaliacao_Service_Boletim_Avaliacao::setPareceresComponentes">setPareceresComponentes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#295"><abbr title="Avaliacao_Service_Boletim_Avaliacao::getPareceresGerais">getPareceresGerais</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#303"><abbr title="Avaliacao_Service_Boletim_Avaliacao::setPareceresGerais">setPareceresGerais</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#315"><abbr title="Avaliacao_Service_Boletim_Avaliacao::getFaltasGeraisCiclo">getFaltasGeraisCiclo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#323"><abbr title="Avaliacao_Service_Boletim_Avaliacao::setFaltasGeraisCiclo">setFaltasGeraisCiclo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#335"><abbr title="Avaliacao_Service_Boletim_Avaliacao::getFaltasComponentesCiclo">getFaltasComponentesCiclo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Avaliacao.php.html#343"><abbr title="Avaliacao_Service_Boletim_Avaliacao::setFaltasComponentesCiclo">setFaltasComponentesCiclo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FaltaAluno.php.html#17"><abbr title="Avaliacao_Service_Boletim_FaltaAluno::_getFaltaAluno">_getFaltaAluno</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FaltaAluno.php.html#40"><abbr title="Avaliacao_Service_Boletim_FaltaAluno::_setFaltaAluno">_setFaltaAluno</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotaAluno.php.html#17"><abbr title="Avaliacao_Service_Boletim_NotaAluno::_getNotaAluno">_getNotaAluno</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="NotaAluno.php.html#40"><abbr title="Avaliacao_Service_Boletim_NotaAluno::_setNotaAluno">_setNotaAluno</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ParecerDescritivoAluno.php.html#17"><abbr title="Avaliacao_Service_Boletim_ParecerDescritivoAluno::_getParecerDescritivoAluno">_getParecerDescritivoAluno</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ParecerDescritivoAluno.php.html#40"><abbr title="Avaliacao_Service_Boletim_ParecerDescritivoAluno::_setParecerDescritivoAluno">_setParecerDescritivoAluno</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#15"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::codigoDisciplinasAglutinadas">codigoDisciplinasAglutinadas</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#31"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacao">getRegraAvaliacao</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#42"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegra">getRegra</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#50"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::_setRegra">_setRegra</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#62"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoTipoPresenca">getRegraAvaliacaoTipoPresenca</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#72"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoTipoParecerDescritivo">getRegraAvaliacaoTipoParecerDescritivo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#80"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoTabelaArredondamento">getRegraAvaliacaoTabelaArredondamento</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#90"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoTipoNota">getRegraAvaliacaoTipoNota</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#100"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoTipoProgressao">getRegraAvaliacaoTipoProgressao</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#110"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoAprovarPelaFrequenciaAposExame">getRegraAvaliacaoAprovarPelaFrequenciaAposExame</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#121"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::hasReprovarAutomaticamenteAposDependencias">hasReprovarAutomaticamenteAposDependencias</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#131"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getQtdeReprovarAutomaticamenteAposDependencias">getQtdeReprovarAutomaticamenteAposDependencias</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#141"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoNotaGeralPorEtapa">getRegraAvaliacaoNotaGeralPorEtapa</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#151"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoMedia">getRegraAvaliacaoMedia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#162"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoMediaRecuperacao">getRegraAvaliacaoMediaRecuperacao</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#173"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoDefinirComponentePorEtapa">getRegraAvaliacaoDefinirComponentePorEtapa</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#183"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoQtdDisciplinasDependencia">getRegraAvaliacaoQtdDisciplinasDependencia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#193"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoPorcentagemPresenca">getRegraAvaliacaoPorcentagemPresenca</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#203"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoFormulaRecuperacao">getRegraAvaliacaoFormulaRecuperacao</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#213"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoFormulaMedia">getRegraAvaliacaoFormulaMedia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#223"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoTabelaArredondamentoConceitual">getRegraAvaliacaoTabelaArredondamentoConceitual</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#233"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoNotaMaximaExameFinal">getRegraAvaliacaoNotaMaximaExameFinal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#244"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoQtdCasasDecimais">getRegraAvaliacaoQtdCasasDecimais</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#256"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoInstituicao">getRegraAvaliacaoInstituicao</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#266"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::hasRegraAvaliacaoFormulaRecuperacao">hasRegraAvaliacaoFormulaRecuperacao</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#277"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::hasRegraAvaliacaoMediaRecuperacao">hasRegraAvaliacaoMediaRecuperacao</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#287"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::hasRegraAvaliacaoReprovacaoAutomatica">hasRegraAvaliacaoReprovacaoAutomatica</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#298"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::hasRegraAvaliacaoAprovaMediaDisciplina">hasRegraAvaliacaoAprovaMediaDisciplina</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#309"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoDesconsiderarLancamentoFrequencia">getRegraAvaliacaoDesconsiderarLancamentoFrequencia</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#319"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::isCyclicRegime">isCyclicRegime</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Validators.php.html#28"><abbr title="Avaliacao_Service_Boletim_Validators::getValidators">getValidators</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Validators.php.html#36"><abbr title="Avaliacao_Service_Boletim_Validators::setValidators">setValidators</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Validators.php.html#46"><abbr title="Avaliacao_Service_Boletim_Validators::getParecerValidators">getParecerValidators</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Validators.php.html#54"><abbr title="Avaliacao_Service_Boletim_Validators::setParecerValidators">setParecerValidators</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Acessores.php.html#129"><abbr title="Avaliacao_Service_Boletim_Acessores::setOptions">setOptions</abbr></a></td><td class="text-right">81%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3 style="margin-top: 2rem;">Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+         <th class="text-right">Complexity</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Acessores.php.html#454"><abbr title="Avaliacao_Service_Boletim_Acessores::getParecerDescritivoAbstractDataMapper">getParecerDescritivoAbstractDataMapper</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">6</td><td class="text-right">42</td></tr>
+       <tr><td><a href="Acessores.php.html#402"><abbr title="Avaliacao_Service_Boletim_Acessores::getFaltaAbstractDataMapper">getFaltaAbstractDataMapper</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">4</td><td class="text-right">20</td></tr>
+       <tr><td><a href="Acessores.php.html#129"><abbr title="Avaliacao_Service_Boletim_Acessores::setOptions">setOptions</abbr></a></td><td class="text-right">81.8%</td><td class="text-right">18</td><td class="text-right">19</td></tr>
+       <tr><td><a href="FaltaAluno.php.html#17"><abbr title="Avaliacao_Service_Boletim_FaltaAluno::_getFaltaAluno">_getFaltaAluno</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="NotaAluno.php.html#17"><abbr title="Avaliacao_Service_Boletim_NotaAluno::_getNotaAluno">_getNotaAluno</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="ParecerDescritivoAluno.php.html#17"><abbr title="Avaliacao_Service_Boletim_ParecerDescritivoAluno::_getParecerDescritivoAluno">_getParecerDescritivoAluno</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#15"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::codigoDisciplinasAglutinadas">codigoDisciplinasAglutinadas</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">3</td><td class="text-right">12</td></tr>
+       <tr><td><a href="Acessores.php.html#248"><abbr title="Avaliacao_Service_Boletim_Acessores::getComponenteDataMapper">getComponenteDataMapper</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Acessores.php.html#270"><abbr title="Avaliacao_Service_Boletim_Acessores::getComponenteTurmaDataMapper">getComponenteTurmaDataMapper</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Acessores.php.html#292"><abbr title="Avaliacao_Service_Boletim_Acessores::getRegraDataMapper">getRegraDataMapper</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Acessores.php.html#314"><abbr title="Avaliacao_Service_Boletim_Acessores::getNotaAlunoDataMapper">getNotaAlunoDataMapper</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Acessores.php.html#336"><abbr title="Avaliacao_Service_Boletim_Acessores::getNotaComponenteDataMapper">getNotaComponenteDataMapper</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Acessores.php.html#358"><abbr title="Avaliacao_Service_Boletim_Acessores::getNotaComponenteMediaDataMapper">getNotaComponenteMediaDataMapper</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Acessores.php.html#380"><abbr title="Avaliacao_Service_Boletim_Acessores::getFaltaAlunoDataMapper">getFaltaAlunoDataMapper</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Acessores.php.html#432"><abbr title="Avaliacao_Service_Boletim_Acessores::getParecerDescritivoAlunoDataMapper">getParecerDescritivoAlunoDataMapper</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Acessores.php.html#484"><abbr title="Avaliacao_Service_Boletim_Acessores::getNotaGeralAbstractDataMapper">getNotaGeralAbstractDataMapper</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Acessores.php.html#505"><abbr title="Avaliacao_Service_Boletim_Acessores::getNotaGeralDataMapper">getNotaGeralDataMapper</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="Acessores.php.html#527"><abbr title="Avaliacao_Service_Boletim_Acessores::getMediaGeralDataMapper">getMediaGeralDataMapper</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="FaltaAluno.php.html#40"><abbr title="Avaliacao_Service_Boletim_FaltaAluno::_setFaltaAluno">_setFaltaAluno</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+       <tr><td><a href="RegraAvaliacao.php.html#110"><abbr title="Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoAprovarPelaFrequenciaAposExame">getRegraAvaliacaoAprovarPelaFrequenciaAposExame</abbr></a></td><td class="text-right">0.0%</td><td class="text-right">2</td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 12.4.0</a> using <a href="https://www.php.net/" target="_top">PHP 8.3.6</a> and <a href="https://phpunit.de/">PHPUnit 12.3.8</a> at Thu Oct 30 8:17:42 -03 2025.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../../../../_js/billboard.pkgd.min.js?v=12.4.0" type="text/javascript"></script>
+  <script type="application/json" id="complexity_class">[[0,26,"Avaliacao.php.html#3","Avaliacao_Service_Boletim_Avaliacao","702"],[0,5,"FaltaAluno.php.html#3","Avaliacao_Service_Boletim_FaltaAluno","30"],[0,4,"NotaAluno.php.html#3","Avaliacao_Service_Boletim_NotaAluno","20"],[0,4,"ParecerDescritivoAluno.php.html#3","Avaliacao_Service_Boletim_ParecerDescritivoAluno","20"],[0,33,"RegraAvaliacao.php.html#3","Avaliacao_Service_Boletim_RegraAvaliacao","1122"],[0,4,"Validators.php.html#3","Avaliacao_Service_Boletim_Validators","20"],[45.57823129251701,74,"Acessores.php.html#3","Avaliacao_Service_Boletim_Acessores","956.64"]]</script>
+  <script type="application/json" id="complexity_method">[[0,1,"Acessores.php.html#238","Avaliacao_Service_Boletim_Acessores::setOption","2"],[0,2,"Acessores.php.html#248","Avaliacao_Service_Boletim_Acessores::getComponenteDataMapper","6"],[0,2,"Acessores.php.html#270","Avaliacao_Service_Boletim_Acessores::getComponenteTurmaDataMapper","6"],[0,2,"Acessores.php.html#292","Avaliacao_Service_Boletim_Acessores::getRegraDataMapper","6"],[0,2,"Acessores.php.html#314","Avaliacao_Service_Boletim_Acessores::getNotaAlunoDataMapper","6"],[0,2,"Acessores.php.html#336","Avaliacao_Service_Boletim_Acessores::getNotaComponenteDataMapper","6"],[0,2,"Acessores.php.html#358","Avaliacao_Service_Boletim_Acessores::getNotaComponenteMediaDataMapper","6"],[0,2,"Acessores.php.html#380","Avaliacao_Service_Boletim_Acessores::getFaltaAlunoDataMapper","6"],[0,4,"Acessores.php.html#402","Avaliacao_Service_Boletim_Acessores::getFaltaAbstractDataMapper","20"],[0,2,"Acessores.php.html#432","Avaliacao_Service_Boletim_Acessores::getParecerDescritivoAlunoDataMapper","6"],[0,6,"Acessores.php.html#454","Avaliacao_Service_Boletim_Acessores::getParecerDescritivoAbstractDataMapper","42"],[0,2,"Acessores.php.html#484","Avaliacao_Service_Boletim_Acessores::getNotaGeralAbstractDataMapper","6"],[0,1,"Acessores.php.html#495","Avaliacao_Service_Boletim_Acessores::setNotaGeralAbstractDataMapper","2"],[0,2,"Acessores.php.html#505","Avaliacao_Service_Boletim_Acessores::getNotaGeralDataMapper","6"],[0,1,"Acessores.php.html#517","Avaliacao_Service_Boletim_Acessores::setNotaGeralDataMapper","2"],[0,2,"Acessores.php.html#527","Avaliacao_Service_Boletim_Acessores::getMediaGeralDataMapper","6"],[0,1,"Acessores.php.html#539","Avaliacao_Service_Boletim_Acessores::setMediaGeralDataMapper","2"],[0,1,"Acessores.php.html#549","Avaliacao_Service_Boletim_Acessores::getComponenteCurricularId","2"],[0,1,"Acessores.php.html#558","Avaliacao_Service_Boletim_Acessores::setComponenteCurricularId","2"],[0,1,"Acessores.php.html#568","Avaliacao_Service_Boletim_Acessores::getCurrentComponenteCurricular","2"],[0,1,"Acessores.php.html#577","Avaliacao_Service_Boletim_Acessores::setCurrentComponenteCurricular","2"],[0,1,"Acessores.php.html#587","Avaliacao_Service_Boletim_Acessores::getComponentes","2"],[0,1,"Acessores.php.html#595","Avaliacao_Service_Boletim_Acessores::_setComponentes","2"],[0,1,"Acessores.php.html#602","Avaliacao_Service_Boletim_Acessores::isUpdateScore","2"],[0,1,"Acessores.php.html#607","Avaliacao_Service_Boletim_Acessores::setUpdateScore","2"],[0,1,"Avaliacao.php.html#101","Avaliacao_Service_Boletim_Avaliacao::getNotasComponentes","2"],[0,1,"Avaliacao.php.html#109","Avaliacao_Service_Boletim_Avaliacao::setNotasComponentes","2"],[0,1,"Avaliacao.php.html#119","Avaliacao_Service_Boletim_Avaliacao::getNotasGerais","2"],[0,1,"Avaliacao.php.html#127","Avaliacao_Service_Boletim_Avaliacao::setNotasGerais","2"],[0,1,"Avaliacao.php.html#139","Avaliacao_Service_Boletim_Avaliacao::getMediasComponentes","2"],[0,1,"Avaliacao.php.html#150","Avaliacao_Service_Boletim_Avaliacao::setMediasComponentes","2"],[0,1,"Avaliacao.php.html#162","Avaliacao_Service_Boletim_Avaliacao::getMediaGeral","2"],[0,1,"Avaliacao.php.html#173","Avaliacao_Service_Boletim_Avaliacao::setMediaGeral","2"],[0,1,"Avaliacao.php.html#180","Avaliacao_Service_Boletim_Avaliacao::addNotaItem","2"],[0,1,"Avaliacao.php.html#190","Avaliacao_Service_Boletim_Avaliacao::getNotas","2"],[0,1,"Avaliacao.php.html#200","Avaliacao_Service_Boletim_Avaliacao::getFaltasComponentes","2"],[0,1,"Avaliacao.php.html#208","Avaliacao_Service_Boletim_Avaliacao::setFaltasComponentes","2"],[0,1,"Avaliacao.php.html#220","Avaliacao_Service_Boletim_Avaliacao::getFaltasGerais","2"],[0,1,"Avaliacao.php.html#228","Avaliacao_Service_Boletim_Avaliacao::setFaltasGerais","2"],[0,1,"Avaliacao.php.html#235","Avaliacao_Service_Boletim_Avaliacao::addFaltaKey","2"],[0,1,"Avaliacao.php.html#245","Avaliacao_Service_Boletim_Avaliacao::getFaltas","2"],[0,1,"Avaliacao.php.html#250","Avaliacao_Service_Boletim_Avaliacao::addParecerKey","2"],[0,1,"Avaliacao.php.html#263","Avaliacao_Service_Boletim_Avaliacao::getPareceres","2"],[0,1,"Avaliacao.php.html#274","Avaliacao_Service_Boletim_Avaliacao::getPareceresComponentes","2"],[0,1,"Avaliacao.php.html#282","Avaliacao_Service_Boletim_Avaliacao::setPareceresComponentes","2"],[0,1,"Avaliacao.php.html#295","Avaliacao_Service_Boletim_Avaliacao::getPareceresGerais","2"],[0,1,"Avaliacao.php.html#303","Avaliacao_Service_Boletim_Avaliacao::setPareceresGerais","2"],[0,1,"Avaliacao.php.html#315","Avaliacao_Service_Boletim_Avaliacao::getFaltasGeraisCiclo","2"],[0,1,"Avaliacao.php.html#323","Avaliacao_Service_Boletim_Avaliacao::setFaltasGeraisCiclo","2"],[0,1,"Avaliacao.php.html#335","Avaliacao_Service_Boletim_Avaliacao::getFaltasComponentesCiclo","2"],[0,1,"Avaliacao.php.html#343","Avaliacao_Service_Boletim_Avaliacao::setFaltasComponentesCiclo","2"],[0,3,"FaltaAluno.php.html#17","Avaliacao_Service_Boletim_FaltaAluno::_getFaltaAluno","12"],[0,2,"FaltaAluno.php.html#40","Avaliacao_Service_Boletim_FaltaAluno::_setFaltaAluno","6"],[0,3,"NotaAluno.php.html#17","Avaliacao_Service_Boletim_NotaAluno::_getNotaAluno","12"],[0,1,"NotaAluno.php.html#40","Avaliacao_Service_Boletim_NotaAluno::_setNotaAluno","2"],[0,3,"ParecerDescritivoAluno.php.html#17","Avaliacao_Service_Boletim_ParecerDescritivoAluno::_getParecerDescritivoAluno","12"],[0,1,"ParecerDescritivoAluno.php.html#40","Avaliacao_Service_Boletim_ParecerDescritivoAluno::_setParecerDescritivoAluno","2"],[0,3,"RegraAvaliacao.php.html#15","Avaliacao_Service_Boletim_RegraAvaliacao::codigoDisciplinasAglutinadas","12"],[0,1,"RegraAvaliacao.php.html#31","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacao","2"],[0,1,"RegraAvaliacao.php.html#42","Avaliacao_Service_Boletim_RegraAvaliacao::getRegra","2"],[0,1,"RegraAvaliacao.php.html#50","Avaliacao_Service_Boletim_RegraAvaliacao::_setRegra","2"],[0,1,"RegraAvaliacao.php.html#62","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoTipoPresenca","2"],[0,1,"RegraAvaliacao.php.html#72","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoTipoParecerDescritivo","2"],[0,1,"RegraAvaliacao.php.html#80","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoTabelaArredondamento","2"],[0,1,"RegraAvaliacao.php.html#90","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoTipoNota","2"],[0,1,"RegraAvaliacao.php.html#100","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoTipoProgressao","2"],[0,2,"RegraAvaliacao.php.html#110","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoAprovarPelaFrequenciaAposExame","6"],[0,1,"RegraAvaliacao.php.html#121","Avaliacao_Service_Boletim_RegraAvaliacao::hasReprovarAutomaticamenteAposDependencias","2"],[0,1,"RegraAvaliacao.php.html#131","Avaliacao_Service_Boletim_RegraAvaliacao::getQtdeReprovarAutomaticamenteAposDependencias","2"],[0,1,"RegraAvaliacao.php.html#141","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoNotaGeralPorEtapa","2"],[0,1,"RegraAvaliacao.php.html#151","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoMedia","2"],[0,1,"RegraAvaliacao.php.html#162","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoMediaRecuperacao","2"],[0,1,"RegraAvaliacao.php.html#173","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoDefinirComponentePorEtapa","2"],[0,1,"RegraAvaliacao.php.html#183","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoQtdDisciplinasDependencia","2"],[0,1,"RegraAvaliacao.php.html#193","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoPorcentagemPresenca","2"],[0,1,"RegraAvaliacao.php.html#203","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoFormulaRecuperacao","2"],[0,1,"RegraAvaliacao.php.html#213","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoFormulaMedia","2"],[0,1,"RegraAvaliacao.php.html#223","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoTabelaArredondamentoConceitual","2"],[0,1,"RegraAvaliacao.php.html#233","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoNotaMaximaExameFinal","2"],[0,1,"RegraAvaliacao.php.html#244","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoQtdCasasDecimais","2"],[0,1,"RegraAvaliacao.php.html#256","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoInstituicao","2"],[0,1,"RegraAvaliacao.php.html#266","Avaliacao_Service_Boletim_RegraAvaliacao::hasRegraAvaliacaoFormulaRecuperacao","2"],[0,1,"RegraAvaliacao.php.html#277","Avaliacao_Service_Boletim_RegraAvaliacao::hasRegraAvaliacaoMediaRecuperacao","2"],[0,1,"RegraAvaliacao.php.html#287","Avaliacao_Service_Boletim_RegraAvaliacao::hasRegraAvaliacaoReprovacaoAutomatica","2"],[0,1,"RegraAvaliacao.php.html#298","Avaliacao_Service_Boletim_RegraAvaliacao::hasRegraAvaliacaoAprovaMediaDisciplina","2"],[0,1,"RegraAvaliacao.php.html#309","Avaliacao_Service_Boletim_RegraAvaliacao::getRegraAvaliacaoDesconsiderarLancamentoFrequencia","2"],[0,1,"RegraAvaliacao.php.html#319","Avaliacao_Service_Boletim_RegraAvaliacao::isCyclicRegime","2"],[0,1,"Validators.php.html#28","Avaliacao_Service_Boletim_Validators::getValidators","2"],[0,1,"Validators.php.html#36","Avaliacao_Service_Boletim_Validators::setValidators","2"],[0,1,"Validators.php.html#46","Avaliacao_Service_Boletim_Validators::getParecerValidators","2"],[0,1,"Validators.php.html#54","Avaliacao_Service_Boletim_Validators::setParecerValidators","2"],[81.81818181818183,18,"Acessores.php.html#129","Avaliacao_Service_Boletim_Acessores::setOptions","19.95"],[100,1,"Acessores.php.html#117","Avaliacao_Service_Boletim_Acessores::getOptions","1"],[100,1,"Acessores.php.html#228","Avaliacao_Service_Boletim_Acessores::getOption","1"],[100,1,"Acessores.php.html#260","Avaliacao_Service_Boletim_Acessores::setComponenteDataMapper","1"],[100,1,"Acessores.php.html#282","Avaliacao_Service_Boletim_Acessores::setComponenteTurmaDataMapper","1"],[100,1,"Acessores.php.html#304","Avaliacao_Service_Boletim_Acessores::setRegraDataMapper","1"],[100,1,"Acessores.php.html#326","Avaliacao_Service_Boletim_Acessores::setNotaAlunoDataMapper","1"],[100,1,"Acessores.php.html#348","Avaliacao_Service_Boletim_Acessores::setNotaComponenteDataMapper","1"],[100,1,"Acessores.php.html#370","Avaliacao_Service_Boletim_Acessores::setNotaComponenteMediaDataMapper","1"],[100,1,"Acessores.php.html#392","Avaliacao_Service_Boletim_Acessores::setFaltaAlunoDataMapper","1"],[100,1,"Acessores.php.html#422","Avaliacao_Service_Boletim_Acessores::setFaltaAbstractDataMapper","1"],[100,1,"Acessores.php.html#444","Avaliacao_Service_Boletim_Acessores::setParecerDescritivoAlunoDataMapper","1"],[100,1,"Acessores.php.html#477","Avaliacao_Service_Boletim_Acessores::setParecerDescritivoAbstractDataMapper","1"]]</script>
+  <script type="text/javascript" defer>
+  const barLabels = [
+    '0%',
+    '0-10%',
+    '10-20%',
+    '20-30%',
+    '30-40%',
+    '40-50%',
+    '50-60%',
+    '60-70%',
+    '70-80%',
+    '80-90%',
+    '90-100%',
+    '100%'
+  ];
+  const barConfig = (name, fullName, values) => ({
+    axis: {
+      x: {
+        type: "category",
+        categories: barLabels,
+      },
+      y: {
+        label: {
+          text: `#${name}`,
+          position: 'outer-top',
+        },
+      },
+    },
+    bindto: `#${name}CoverageDistribution`,
+    data: {
+      columns: [
+        [fullName].concat(values),
+      ],
+      colors: {
+        [fullName]: "rgba(69, 114, 167, 0.75)",
+      },
+      type: "bar",
+    },
+    bar: {
+      width: {
+        ratio: 0.9,
+      },
+    },
+    grid: {
+      focus: {
+        show: false,
+      },
+      x: {
+        show: true,
+      },
+      y: {
+        show: true,
+      },
+    },
+    legend: {
+      show: false,
+    },
+    tooltip: {
+      contents: function (data) {
+        return `<table class="bb-tooltip"><tbody>
+            <tr><th colspan="2">Coverage ${barLabels[data[0].x]}</th></tr>
+            <tr><td class="value">${data[0].value} ${name}</td></tr>
+          </tbody></table>`;
+      },
+      grouped: false,
+    },
+  });
+  bb.generate(
+    barConfig('classes', "Class Coverage", [6,0,0,0,0,1,0,0,0,0,0,0])
+  );
+  bb.generate(
+    barConfig('methods', "Method Coverage", [91,0,0,0,0,0,0,0,0,1,0,12])
+  );
+
+  const scatterConfig = (name, complexityData) => ({
+    axis: {
+      x: {
+        label: {
+          text: 'Code Coverage (in percent)',
+          position: 'outer-right',
+        },
+        tick: {
+          values: [0, 20, 40, 60, 80, 100],
+        },
+      },
+      y: {
+        label: {
+          text: 'Cyclomatic Complexity',
+          position: 'outer-top',
+        },
+        min: 0,
+        padding: {
+          bottom: 0,
+          top: 5,
+        },
+      },
+    },
+    bindto: `#${name}Complexity`,
+    data: {
+      columns: [
+        ["complexity_x"].concat(complexityData.map(d => d[0])),
+        ["complexity"].concat(complexityData.map(d => d[1])),
+      ],
+      onclick: function(data, element) {
+        window.location = complexityData[data.index][2];
+      },
+      type: "scatter",
+      xs: {
+        "complexity": "complexity_x",
+      },
+    },
+    grid: {
+      focus: {
+        show: true,
+        y: true,
+      },
+      x: {
+        show: true,
+      },
+      y: {
+        show: true,
+      },
+    },
+    legend: {
+      show: false,
+    },
+    tooltip: {
+      contents: function (data) {
+        const coverage = Math.round(data[0].x);
+        const complexity = data[0].value;
+        const targetName = complexityData[data[0].index][3];
+        const crap = complexityData[data[0].index][4];
+        return `<table class="bb-tooltip"><tbody>
+            <tr><th colspan="2">${targetName}</th></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Coverage</td><td class="name">${coverage}%</td></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Complexity</td><td class="value">${complexity}</td></tr>
+            <tr class="bb-tooltip-name-complexity"><td>Crap</td><td class="value">${crap}</td></tr>
+          </tbody></table>`;
+      },
+      grouped: false,
+    },
+  });
+  const classComplexityData = JSON.parse(document.getElementById('complexity_class').textContent);
+  bb.generate(
+    scatterConfig("class", classComplexityData)
+  );
+  const methodComplexityData = JSON.parse(document.getElementById('complexity_method').textContent);
+  bb.generate(
+    scatterConfig("method", methodComplexityData),
+  );
+  </script>
+ </body>
+</html>
