@@ -10,7 +10,6 @@ require_once __DIR__ . '/../../../../../../ieducar/modules/Avaliacao/Service/Bol
 
 /**
  * Classe 'dublê' (stub) apenas para testar o Trait.
- * O Trait não pode ser instanciado diretamente.
  */
 class TraitTestClass
 {
@@ -22,8 +21,6 @@ class TraitTestClass
     {
         $this->_setRegra($regra);
     }
-
-    // --- Métodos "setter" adicionados para ajudar nos testes ---
 
     // Este método é necessário para o teste CT4
     public function setCodigoDisciplinasAglutinadas($codigos)
@@ -37,28 +34,8 @@ class TraitTestClass
  */
 class RegraAvaliacaoTest extends TestCase
 {
-    private $regraMock;
-
-    /**
-     * Configura o mock da Regra de Avaliação antes de cada teste
-     */
-    protected function setUp(): void
-    {
-        // Criamos um mock da Regra
-        $this->regraMock = $this->createMock(\RegraAvaliacao_Model_Regra::class);
-
-        // --- Configuração para os testes CT5 e CT6 ---
-        // Precisamos que a propriedade 'disciplinasAglutinadas' exista no Mock
-        // para que a função "empty()" e "explode()" funcionem.
-        // Adicionamos esta propriedade ao mock.
-        if (!property_exists($this->regraMock, 'disciplinasAglutinadas')) {
-            $this->regraMock->disciplinasAglutinadas = null;
-        }
-    }
-
     /*****************************************************************
      * TESTES (CT1, CT2, CT3) - MÉTODO 1: getRegraAvaliacaoAprovarPelaFrequenciaAposExame()
-     * (Critério: Duas condições em uma decisão - MC/DC)
      *****************************************************************/
 
     /**
@@ -67,17 +44,14 @@ class RegraAvaliacaoTest extends TestCase
      */
     public function testGetRegraAvaliacaoAprovarPelaFrequenciaAposExame_CT1_RetornaVerdadeiro()
     {
-        // Configuração do Mock (Cenário)
-        $this->regraMock->method('get')
+        // 1. Configuração do Mock (Cenário)
+        $regraMock = $this->createMock(\RegraAvaliacao_Model_Regra::class);
+        $regraMock->method('get')
             ->willReturnMap([
                 ['aprovarPelaFrequenciaAposExame', true],  // C1 = V
                 ['formulaRecuperacao', 123] // C2 = V (qualquer valor não-nulo)
             ]);
-
-        // Instancia a classe de teste com o mock
-        $service = new TraitTestClass($this->regraMock);
-
-        // Execução e Verificação
+        $service = new TraitTestClass($regraMock);
         $this->assertTrue($service->getRegraAvaliacaoAprovarPelaFrequenciaAposExame());
     }
 
@@ -87,17 +61,14 @@ class RegraAvaliacaoTest extends TestCase
      */
     public function testGetRegraAvaliacaoAprovarPelaFrequenciaAposExame_CT2_RetornaFalsoSemFormula()
     {
-        // Configuração do Mock (Cenário)
-        $this->regraMock->method('get')
+        // 1. Configuração do Mock (Cenário)
+        $regraMock = $this->createMock(\RegraAvaliacao_Model_Regra::class);
+        $regraMock->method('get')
             ->willReturnMap([
                 ['aprovarPelaFrequenciaAposExame', true],  // C1 = V
                 ['formulaRecuperacao', null] // C2 = F (valor nulo)
             ]);
-
-        // Instancia a classe de teste com o mock
-        $service = new TraitTestClass($this->regraMock);
-
-        // Execução e Verificação
+        $service = new TraitTestClass($regraMock);
         $this->assertFalse($service->getRegraAvaliacaoAprovarPelaFrequenciaAposExame());
     }
 
@@ -107,24 +78,20 @@ class RegraAvaliacaoTest extends TestCase
      */
     public function testGetRegraAvaliacaoAprovarPelaFrequenciaAposExame_CT3_RetornaFalsoRegraDesabilitada()
     {
-        // Configuração do Mock (Cenário)
-        $this->regraMock->method('get')
+        // 1. Configuração do Mock (Cenário)
+        $regraMock = $this->createMock(\RegraAvaliacao_Model_Regra::class);
+        $regraMock->method('get')
             ->willReturnMap([
                 ['aprovarPelaFrequenciaAposExame', false], // C1 = F
                 ['formulaRecuperacao', 123] // C2 = V (qualquer valor não-nulo)
             ]);
-
-        // Instancia a classe de teste com o mock
-        $service = new TraitTestClass($this->regraMock);
-
-        // Execução e Verificação
+        $service = new TraitTestClass($regraMock);
         $this->assertFalse($service->getRegraAvaliacaoAprovarPelaFrequenciaAposExame());
     }
 
 
     /*****************************************************************
      * TESTES (CT4, CT5, CT6) - MÉTODO 2: codigoDisciplinasAglutinadas()
-     * (Critério: Pelo menos duas decisões)
      *****************************************************************/
 
     /**
@@ -133,15 +100,15 @@ class RegraAvaliacaoTest extends TestCase
      */
     public function testCodigoDisciplinasAglutinadas_CT4_JaSetado()
     {
-        // Instancia a classe com o mock
-        $service = new TraitTestClass($this->regraMock);
-        
-        // Seta um valor manualmente (simulando uma primeira chamada)
+        // 1. Configuração do Mock (Cenário)
+        $regraMock = $this->createMock(\RegraAvaliacao_Model_Regra::class);
+        $service = new TraitTestClass($regraMock);
         $service->setCodigoDisciplinasAglutinadas(['99']);
 
-        // Executa (Decisão 1 na linha 17 será FALSA)
+        // 2. Executa (Decisão 1 na linha 17 será FALSA)
         $resultado = $service->codigoDisciplinasAglutinadas();
 
+        // 3. Verificação
         $this->assertEquals(['99'], $resultado);
     }
 
@@ -152,14 +119,26 @@ class RegraAvaliacaoTest extends TestCase
      */
     public function testCodigoDisciplinasAglutinadas_CT5_NaoSetado_RegraVazia()
     {
-        // Configuração do Mock
-        $this->regraMock->disciplinasAglutinadas = ''; // Faz 'empty()' (Decisão 2) ser VERDADEIRO
-        $service = new TraitTestClass($this->regraMock);
+        // 1. Configuração do Mock (Cenário)
+        $regraMock = $this->createMock(\RegraAvaliacao_Model_Regra::class);
 
-        // Executa (Decisão 1 = V, Decisão 2 = V)
+        // --- CORREÇÃO DEFINITIVA ---
+        // Simula __isset() para o 'empty()' funcionar
+        $regraMock->method('__isset')
+                  ->with('disciplinasAglutinadas')
+                  ->willReturn(true);
+        // Simula __get()
+        $regraMock->method('__get')
+                  ->with('disciplinasAglutinadas')
+                  ->willReturn(''); // Faz 'empty()' ser VERDADEIRO
+
+        // 2. Instancia a classe
+        $service = new TraitTestClass($regraMock);
+
+        // 3. Executa (Decisão 1 = V, Decisão 2 = V)
         $resultado = $service->codigoDisciplinasAglutinadas();
 
-        // Verifica se retorna um array vazio
+        // 4. Verificação
         $this->assertEquals([], $resultado);
     }
 
@@ -170,14 +149,26 @@ class RegraAvaliacaoTest extends TestCase
      */
     public function testCodigoDisciplinasAglutinadas_CT6_NaoSetado_RegraComValores()
     {
-        // Configuração do Mock
-        $this->regraMock->disciplinasAglutinadas = '10,20,30'; // Faz 'empty()' (Decisão 2) ser FALSO
-        $service = new TraitTestClass($this->regraMock);
+        // 1. Configuração do Mock (Cenário)
+        $regraMock = $this->createMock(\RegraAvaliacao_Model_Regra::class);
+        
+        // --- CORREÇÃO DEFINITIVA ---
+        // Simula __isset() para o 'empty()' funcionar
+        $regraMock->method('__isset')
+                  ->with('disciplinasAglutinadas')
+                  ->willReturn(true);
+        // Simula __get()
+        $regraMock->method('__get')
+                  ->with('disciplinasAglutinadas')
+                  ->willReturn('10,20,30'); // Faz 'empty()' ser FALSO
 
-        // Executa (Decisão 1 = V, Decisão 2 = F)
+        // 2. Instancia a classe
+        $service = new TraitTestClass($regraMock);
+
+        // 3. Executa (Decisão 1 = V, Decisão 2 = F)
         $resultado = $service->codigoDisciplinasAglutinadas();
 
-        // Verifica se ele separou a string corretamente
+        // 4. Verificação
         $this->assertEquals(['10', '20', '30'], $resultado);
     }
 }
