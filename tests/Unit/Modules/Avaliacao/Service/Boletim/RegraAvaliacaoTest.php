@@ -4,10 +4,6 @@ namespace Tests\Unit\Modules\Avaliacao\Service\Boletim; // Namespace baseado no 
 
 use PHPUnit\Framework\TestCase;
 
-// Como o projeto é legado (antigo) e não usa namespaces modernos,
-// precisamos carregar o Trait e a Classe manualmente.
-// O __DIR__ . '/../../../../../.. ' volta 6 níveis de pasta
-// (de tests/Unit/Modules/Avaliacao/Service/Boletim para a raiz do projeto)
 require_once __DIR__ . '/../../../../../../ieducar/modules/RegraAvaliacao/Model/Regra.php';
 require_once __DIR__ . '/../../../../../../ieducar/modules/Avaliacao/Service/Boletim/RegraAvaliacao.php';
 
