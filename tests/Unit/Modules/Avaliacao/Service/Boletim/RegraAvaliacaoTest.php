@@ -4,7 +4,6 @@ namespace Tests\Unit\Modules\Avaliacao\Service\Boletim; // Namespace baseado no 
 
 use PHPUnit\Framework\TestCase;
 
-// Carrega as classes e o Trait manualmente
 require_once __DIR__ . '/../../../../../../ieducar/modules/RegraAvaliacao/Model/Regra.php';
 require_once __DIR__ . '/../../../../../../ieducar/modules/Avaliacao/Service/Boletim/RegraAvaliacao.php';
 
@@ -122,7 +121,6 @@ class RegraAvaliacaoTest extends TestCase
         // 1. Configuração do Mock (Cenário)
         $regraMock = $this->createMock(\RegraAvaliacao_Model_Regra::class);
 
-        // --- CORREÇÃO DEFINITIVA ---
         // Simula __isset() para o 'empty()' funcionar
         $regraMock->method('__isset')
                   ->with('disciplinasAglutinadas')
@@ -152,7 +150,6 @@ class RegraAvaliacaoTest extends TestCase
         // 1. Configuração do Mock (Cenário)
         $regraMock = $this->createMock(\RegraAvaliacao_Model_Regra::class);
         
-        // --- CORREÇÃO DEFINITIVA ---
         // Simula __isset() para o 'empty()' funcionar
         $regraMock->method('__isset')
                   ->with('disciplinasAglutinadas')
